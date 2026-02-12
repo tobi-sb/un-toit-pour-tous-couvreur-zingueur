@@ -1,0 +1,327 @@
+/* ============================================
+   NAVBAR - CSS PROPRE ET SIMPLE
+   ============================================ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10010;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10013;
+    background: #ffffff;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0A2342;
+    position: relative;
+    z-index: 10014;
+}
+
+.logo-link {
+    color: #0A2342;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo-link:hover {
+    color: #555;
+}
+
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: #0A2342;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #FF6600;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF6600;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #FF6600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    height: 1px;
+}
+
+/* Mobile Toggle Button */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+    border: none;
+    z-index: 10014;
+    position: relative;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FF6600;
+    border-radius: 1px;
+    transition: all 0.3s;
+}
+
+.nav-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Menu slide depuis la droite - 100% width */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        gap: 0;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        /* Add space for scrolling */
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 10012;
+        margin: 0;
+        list-style: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid #E2EAF1;
+    }
+
+    .nav-item:first-child {
+        border-top: 1px solid #E2EAF1;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 20px 30px;
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-link:hover {
+        background: #E8F1F8;
+    }
+}
+
+/* Desktop padding */
+@media (min-width: 769px) {
+    .nav-container {
+        padding: 20px 60px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .nav-container {
+        padding: 20px 80px;
+    }
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    border-top: 3px solid #FF6600;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 0;
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    color: #0A2342;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
+    text-align: left;
+    border: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f5fa;
+    color: #FF6600;
+    padding-left: 25px;
+    /* Petit effet de glissement */
+}
+
+.dropdown-toggle i {
+    font-size: 0.8em;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Dropdown */
+@media (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background-color: #f9f9f9;
+        width: 100%;
+        display: none;
+        padding-left: 0;
+        border-top: none;
+        border-left: 4px solid #FF6600;
+        box-sizing: border-box;
+    }
+
+    /* Force display block when active, using !important to override any specific hover states */
+    .dropdown.active .dropdown-menu {
+        display: block !important;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        /* On mobile, strictly disable hover opening unless active */
+        display: none;
+    }
+
+    /* Ensure active state wins over hover state */
+    .dropdown.active:hover .dropdown-menu {
+        display: block !important;
+    }
+
+    .dropdown-menu li a {
+        padding: 15px 30px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+}

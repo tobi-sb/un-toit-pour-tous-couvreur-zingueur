@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Force all elements to respect viewport width */
+*,
+*::before,
+*::after {
+    max-width: 100%;
+}
+
+/* Prevent any element from causing horizontal scroll */
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+ul,
+li,
+section {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1.2s ease-out;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1.2s ease-out;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1.2s ease-out;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Services Hero Section */
+.services-hero {
+    padding: 150px 20px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0A2342;
+    margin-bottom: 1.5rem;
+}
+
+.services-hero-description {
+    font-size: 1.25rem;
+    color: #3E5066;
+    line-height: 1.8;
+}
+
+/* Services Gallery */
+.services-gallery {
+    padding: 40px 20px 80px;
+    background-color: #ffffff;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.gallery-image {
+    flex: 1;
+    max-width: 580px;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Reviews Section */
+.reviews-section {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../data/image/6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.reviews-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.reviews-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+.reviews-background h2,
+.reviews-background p {
+    display: none;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.review-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.review-text {
+    font-size: 1rem;
+    color: #0A2342;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.review-author {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3E5066;
+    text-align: right;
+    margin: 0;
+}
+
+/* Our Services Section */
+.our-services-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.our-services-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.our-services-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.our-services-label {
+    display: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333;
+}
+
+.our-services-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.our-services-desc {
+    font-size: 1.1rem;
+    color: #3E5066;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: #fdfdfd;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #333;
+}
+
+.service-card-image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.service-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover .service-card-image img {
+    transform: scale(1.1);
+}
+
+.service-card-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.service-card-text {
+    font-size: 1rem;
+    color: #3E5066;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.service-features li {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.service-features li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .our-services-section {
+        padding: 80px 20px;
+    }
+
+    .our-services-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 20px;
+    background-color: #F0F5FA;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0A2342;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0A2342;
+    margin-bottom: 0.75rem;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #3E5066;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 120px 20px 60px;
+    }
+
+    .services-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .services-hero-description {
+        font-size: 1.1rem;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery-image {
+        max-width: 100%;
+    }
+
+    .reviews-section {
+        background-attachment: scroll;
+        height: auto;
+        min-height: 40vh;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .review-card {
+        max-width: 100%;
+    }
+
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero {
+        padding: 100px 20px 0px;
+    }
+
+    .services-hero-title {
+        font-size: 2rem;
+    }
+
+    .services-hero-description {
+        font-size: 1rem;
+    }
+
+    .services-gallery {
+        padding: 60px 20px;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-text {
+        font-size: 0.95rem;
+    }
+
+    .faq-section {
+        padding: 60px 20px;
+    }
+
+    .faq-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .faq-item {
+        padding: 20px;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.95rem;
+    }
+}
+
+.theme-icon {
+    color: #FF6600;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Achievements Section Styles (Copied from style.css) */
+.achievements-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievements-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.achievements-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #05162B;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.achievements-desc {
+    font-size: 1.1rem;
+    color: #3E5066;
+    line-height: 1.6;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.achievement-card {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: #d0e1ff;
+}
+
+.achievement-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.achievement-item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #05162B;
+    line-height: 1.3;
+}
+
+.achievement-item-desc {
+    font-size: 0.95rem;
+    color: #3E5066;
+    line-height: 1.6;
+}
+
+/* Responsive for Achievements in Services Page */
+@media (max-width: 1024px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Intervention Section Styles (from style.css) */
+.intervention-section {
+    padding: 80px 20px;
+    background-color: #f7fafc;
+    text-align: center;
+}
+
+.intervention-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intervention-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #05162B;
+}
+
+.intervention-desc {
+    font-size: 1.15rem;
+    color: #3E5066;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.intervention-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.city-badge {
+    background-color: #ffffff;
+    color: #05162B;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.city-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    background-color: #eaebed;
+    color: #FF6600;
+}
+
+@media (max-width: 768px) {
+    .intervention-title {
+        font-size: 2rem;
+    }
+
+    .city-badge {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}

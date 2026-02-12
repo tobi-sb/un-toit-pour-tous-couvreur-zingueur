@@ -1,0 +1,624 @@
+/* ============================================
+   CITY PAGE STYLES - Design Unique et Special
+   ============================================ */
+
+/* City Hero Section */
+.city-hero {
+    height: 75vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(10, 35, 66, 0.7), rgba(10, 35, 66, 0.7)), url('image/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.city-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    clip-path: ellipse(55% 60% at 50% 100%);
+    z-index: 2;
+}
+
+.city-hero-content {
+    max-width: 900px;
+    z-index: 3;
+    padding-bottom: 50px;
+    padding-top: 120px;
+}
+
+.city-label {
+    display: inline-block;
+    background: rgba(255, 102, 0, 0.2);
+    border: 1px solid #FF6600;
+    color: #FF6600;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+}
+
+.city-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.city-hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.city-hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.city-cta-button {
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.city-cta-button.primary {
+    background: #FF6600;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(255, 102, 0, 0.3);
+}
+
+.city-cta-button.primary:hover {
+    background: #e65c00;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(255, 102, 0, 0.4);
+}
+
+.city-cta-button.secondary {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.city-cta-button.secondary:hover {
+    background: #ffffff;
+    color: #0A2342;
+    transform: translateY(-3px);
+}
+
+/* Local Intro Section */
+.city-intro-section {
+    padding: 40px 20px 80px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.city-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.city-intro-text {
+    flex: 1;
+}
+
+.city-intro-text h2 {
+    font-size: 2.5rem;
+    color: #0A2342;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.city-intro-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #FF6600;
+    border-radius: 2px;
+}
+
+.city-intro-text p {
+    font-size: 1.1rem;
+    color: #3E5066;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.city-benefits {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.city-benefits li {
+    font-size: 1.1rem;
+    color: #1C3552;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.city-benefits li i {
+    color: #FF6600;
+    font-size: 1.3rem;
+}
+
+.city-intro-image {
+    flex: 1;
+    position: relative;
+}
+
+.city-intro-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.image-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #0A2342;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    min-width: 140px;
+}
+
+.badge-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FF6600;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.badge-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+/* Services Grid Specific */
+.city-services-section {
+    padding: 100px 20px;
+    background-color: #F8F9FA;
+}
+
+.city-services-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.city-services-header h2 {
+    font-size: 2.8rem;
+    color: #0A2342;
+    margin-bottom: 15px;
+}
+
+.city-services-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.city-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.city-service-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+}
+
+.city-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-bottom-color: #FF6600;
+}
+
+.service-icon-box {
+    width: 70px;
+    height: 70px;
+    background: #FFF4EC;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #FF6600;
+    transition: all 0.3s ease;
+}
+
+.city-service-card:hover .service-icon-box {
+    background: #FF6600;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.city-service-card h3 {
+    font-size: 1.4rem;
+    color: #0A2342;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.city-service-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Local Project Highlight */
+.local-project-section {
+    padding: 100px 20px;
+    background: #ffffff;
+}
+
+.local-project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.local-project-content {
+    order: 2;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #E8F1F8;
+    color: #0A2342;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.local-project-content h2 {
+    font-size: 2.5rem;
+    color: #0A2342;
+    margin-bottom: 25px;
+}
+
+.project-desc {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    border-left: 4px solid #FF6600;
+    padding-left: 20px;
+}
+
+.project-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.p-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0A2342;
+}
+
+.p-label {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.local-project-image {
+    order: 1;
+    position: relative;
+}
+
+.local-project-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0 #E8F1F8;
+    transition: all 0.5s ease;
+}
+
+.local-project-image:hover img {
+    transform: translate(-10px, -10px);
+    box-shadow: 30px 30px 0 #FF6600;
+}
+
+/* Call to Action Form */
+.city-cta-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0A2342 0%, #163C66 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.city-cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.city-cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.city-cta-container p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.city-contact-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.city-contact-form input,
+.city-contact-form textarea {
+    padding: 15px 20px;
+    border: 2px solid #E2EAF1;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.city-contact-form input:focus,
+.city-contact-form textarea:focus {
+    border-color: #FF6600;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.city-contact-form button {
+    background: #FF6600;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.city-contact-form button:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer City Links */
+.footer-links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-city-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-city-list li {
+    margin-bottom: 8px;
+}
+
+.footer-city-list a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-city-list a:hover {
+    color: #FF6600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .city-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .local-project-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .city-hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 60px;
+    }
+
+    .city-hero-content {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .city-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .city-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .city-hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .city-cta-button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .city-intro-section {
+        padding: 60px 20px;
+    }
+
+    .city-intro-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .city-intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .image-badge {
+        right: 10px;
+        bottom: -30px;
+        padding: 15px;
+        min-width: 120px;
+    }
+
+    .badge-number {
+        font-size: 2rem;
+    }
+
+    .city-services-section {
+        padding: 60px 20px;
+    }
+
+    .city-services-header h2 {
+        font-size: 2rem;
+    }
+
+    .city-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .local-project-section {
+        padding: 60px 20px;
+    }
+
+    .local-project-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .local-project-content {
+        order: 1;
+    }
+
+    .local-project-content h2 {
+        font-size: 2rem;
+    }
+
+    .local-project-image {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .local-project-image img {
+        transform: none;
+        box-shadow: 10px 10px 0 #E8F1F8;
+        transition: all 0.8s ease;
+    }
+
+    .local-project-image.visible img {
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px 0 #FF6600;
+    }
+
+    .local-project-image:hover img {
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px 0 #FF6600;
+    }
+
+    .city-cta-section {
+        padding: 60px 20px;
+    }
+
+    .city-cta-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .city-contact-form {
+        padding: 25px;
+        gap: 15px;
+    }
+}

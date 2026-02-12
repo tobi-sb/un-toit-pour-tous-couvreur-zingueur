@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
+        name="viewport" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Contact - Nuances Deco</title>
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+    <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact-hero">
+        <div class="contact-hero-content fade-in">
+            <h1 class="contact-hero-title" id="context_title_14">Contactez-nous</h1>
+            <p class="contact-hero-description" id="context_description_14">Vous avez un projet de peinture ou de
+                décoration ? N'hésitez pas à nous contacter pour un devis gratuit.</p>
+        </div>
+    </section>
+    <section class="contact-content-section">
+        <div class="contact-content-container">
+            <div class="contact-form-wrapper slide-in-left">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Nom et prénom</label>
+                        <input class="form-input" id="name" name="name" placeholder="Entrez votre nom complet"
+                            required="" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Téléphone</label>
+                        <input class="form-input" id="phone" name="phone" placeholder="06 00 00 00 00" type="tel" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-input" id="email" name="email" placeholder="votre.email@exemple.com"
+                            required="" type="email" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-textarea" id="message" name="message"
+                            placeholder="Décrivez votre projet..." required="" rows="6"></textarea>
+                    </div>
+                    <button class="contact-submit-button" type="submit">Envoyer votre message</button>
+                </form>
+            </div>
+            <div class="contact-image-wrapper slide-in-right">
+                <img alt="Contact Nuances Deco" data-idx="1" id="image_14" src="image/image_14_1.jpg" />
+            </div>
+        </div>
+    </section>
+    <section class="location-section">
+        <div class="location-container">
+            <div class="location-top slide-in-left">
+                <div class="location-info">
+                    <h2 class="location-title">Notre emplacement</h2>
+                    <p class="location-description">Nous sommes situés au cœur de la ville, offrant des services de
+                        peinture et décoration intérieure pour particuliers et professionnels.</p>
+                </div>
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <h3 class="info-block-title">Adresse</h3>
+                        <p class="info-block-text">Revigny sur Ornain</p>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="info-block-title">Horaires</h3>
+                        <p class="info-block-text">Lundi à Vendredi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map slide-in-right">
+                <div id="map"
+                    style="height: 400px; width: 100%; max-width: 100%; border-radius: 8px; overflow: hidden; box-sizing: border-box;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer" id="footer-background">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <p class="footer-subtitle">Pour toute demande de renseignement.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4 class="contact-label">Adresse</h4>
+                            <p class="contact-text">Revigny sur Ornain</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4 class="contact-label">Email</h4>
+                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com" id="email_address"
+                                    style="color: inherit; text-decoration: none;">contact@nuancesdeco.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h4 class="contact-label">Téléphone</h4>
+                            <p class="contact-text"><a href="tel:06 58 74 07 47" id="phone_number"
+                                    style="color: inherit; text-decoration: none;">06 58 74 07 47</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <form class="footer-form-content">
+                        <div class="footer-form-group">
+                            <label class="footer-form-label" for="footer-name">Nom et prénom</label>
+                            <input class="footer-form-input" id="footer-name" name="fullname"
+                                placeholder="Entrez votre nom complet" required="" type="text" />
+                        </div>
+                        <button class="footer-submit-button" type="submit" id="footer-button">Envoyer votre
+                            demande</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>// Configuration de l'adresse et des coordonnées
+        var MAP_ADDRESS = "Revigny sur Ornain";
+        var MAP_LATITUDE = 48.8284503;
+        var MAP_LONGITUDE = 4.9870514;
+
+        // Initialisation de la carte Leaflet
+        var map = L.map('map').setView([MAP_LATITUDE, MAP_LONGITUDE], 17);
+
+        // Ajout des tuiles OpenStreetMap
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        // Ajout d'un marqueur à l'adresse
+        var marker = L.marker([MAP_LATITUDE, MAP_LONGITUDE]).addTo(map);
+        marker.bindPopup('<b>Notre adresse</b><br>' + MAP_ADDRESS).openPopup();</script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            navToggle.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+
+            // Highlight active navigation link
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Navbar scroll animation
+            const navbar = document.querySelector('.navbar');
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', function () {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scrolling down
+                    navbar.classList.add('hidden');
+                } else {
+                    // Scrolling up
+                    navbar.classList.remove('hidden');
+                }
+
+                lastScrollTop = scrollTop;
+            });
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Fix overflow issue after zoom/unzoom - Force recalculation
+        (function () {
+            let lastViewportWidth = window.innerWidth;
+            let lastViewportHeight = window.innerHeight;
+            let resizeTimeout;
+
+            function forceRecalculate() {
+                // Force browser to recalculate layout
+                const html = document.documentElement;
+                const body = document.body;
+
+                // Temporarily force a reflow
+                const temp = html.offsetHeight;
+
+                // Set explicit widths
+                html.style.width = '100vw';
+                html.style.maxWidth = '100vw';
+                body.style.width = '100vw';
+                body.style.maxWidth = '100vw';
+
+                // Force all sections to recalculate
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => {
+                    section.style.width = '100vw';
+                    section.style.maxWidth = '100vw';
+                });
+
+                // Force navbar
+                const navbar = document.querySelector('.navbar');
+                if (navbar) {
+                    navbar.style.width = '100vw';
+                    navbar.style.maxWidth = '100vw';
+                }
+
+                // Force footer
+                const footer = document.querySelector('.footer');
+                if (footer) {
+                    footer.style.width = '100vw';
+                    footer.style.maxWidth = '100vw';
+                }
+
+                // Force all containers
+                const containers = document.querySelectorAll('.nav-container, .contact-content-container, .location-container, .footer-container');
+                containers.forEach(container => {
+                    container.style.maxWidth = '100vw';
+                    container.style.width = '100%';
+                });
+
+                // Prevent horizontal scroll
+                html.style.overflowX = 'hidden';
+                body.style.overflowX = 'hidden';
+
+                // Force another reflow
+                const temp2 = html.offsetHeight;
+            }
+
+            function handleViewportChange() {
+                const currentWidth = window.innerWidth;
+                const currentHeight = window.innerHeight;
+
+                // Check if viewport actually changed (zoom/unzoom)
+                if (Math.abs(currentWidth - lastViewportWidth) > 1 ||
+                    Math.abs(currentHeight - lastViewportHeight) > 1) {
+
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(() => {
+                        forceRecalculate();
+                        lastViewportWidth = currentWidth;
+                        lastViewportHeight = currentHeight;
+                    }, 50);
+                }
+            }
+
+            // Listen for resize (includes zoom/unzoom)
+            window.addEventListener('resize', handleViewportChange, { passive: true });
+
+            // Listen for orientation change
+            window.addEventListener('orientationchange', () => {
+                setTimeout(forceRecalculate, 100);
+            });
+
+            // Listen for scroll (footer appears and triggers fix)
+            let scrollFixCount = 0;
+            window.addEventListener('scroll', () => {
+                scrollFixCount++;
+                if (scrollFixCount % 10 === 0) { // Every 10 scroll events
+                    forceRecalculate();
+                }
+            }, { passive: true });
+
+            // Initial fix
+            forceRecalculate();
+
+            // Fix after page load
+            window.addEventListener('load', () => {
+                setTimeout(forceRecalculate, 100);
+            });
+
+            // Fix on any touch interaction (might trigger zoom)
+            document.addEventListener('touchstart', () => {
+                setTimeout(forceRecalculate, 100);
+            }, { passive: true });
+
+            // Fix on visibility change (when user comes back to tab)
+            document.addEventListener('visibilitychange', () => {
+                if (!document.hidden) {
+                    setTimeout(forceRecalculate, 100);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
