@@ -1,4 +1,5 @@
-// Script pour charger les composants réutilisables (navbar et footer)
+// Script pour charger les composants réutilisables (navbar et footer) 
+// et initialiser les services globaux (EmailJS)
 document.addEventListener('DOMContentLoaded', function() {
     // Charger la navbar
     const navbarPlaceholder = document.getElementById('navbar-placeholder');
@@ -22,6 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => console.error('Erreur lors du chargement du footer:', error));
     }
+
+    // Charger les services tiers (EmailJS)
+    const emailjsScript = document.createElement('script');
+    emailjsScript.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+    emailjsScript.onload = function() {
+        // Une fois EmailJS chargé, on charge notre script de configuration
+        const customEmailScript = document.createElement('script');
+        customEmailScript.src = 'email.js';
+        document.body.appendChild(customEmailScript);
+    };
+    document.body.appendChild(emailjsScript);
 });
 
 function initNavbar() {
