@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="robots" content="index, follow" />
-    <title>Peintre Décorateur à Commercy | Rénovation Habitat</title>
+    <title>Peintre Décorateur à Commercy | Peinture et Décoration</title>
     <meta name="description"
-        content="Artisan peintre qualifié à Commercy. Travaux de peinture, revêtements de sols et rénovation intérieure. Devis gratuit et intervention soignée." />
+        content="Artisan peintre qualifié à Commercy. Travaux de peinture et décoration intérieure. Devis gratuit et intervention soignée." />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -19,8 +19,20 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html">Wilmart</a>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+                </div>
+                <div class="nav-badges">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -45,7 +57,18 @@
                         <li><a href="peintre-commercy.html">Commercy</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <div class="nav-badges-mobile">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
@@ -54,95 +77,101 @@
     <header class="city-hero">
         <div class="city-hero-content fade-in">
             <div class="city-label"><i class="fas fa-map-marker-alt"></i> Commercy</div>
-            <h1 class="city-hero-title">Votre Peintre à Commercy</h1>
-            <p class="city-hero-subtitle">Une intervention rapide et de qualité pour tous vos travaux de peinture et
+            <h1 class="city-hero-title" id="text_hero_title">Votre Peintre à Commercy</h1>
+            <p class="city-hero-subtitle" id="text_hero_desc">Une intervention rapide et de qualité pour tous vos
+                travaux de peinture et
                 décoration</p>
             <div class="city-hero-buttons">
                 <a href="#contact-section" class="city-cta-button primary">Demander un Devis Gratuit</a>
-                <a href="tel:0658740747" class="city-cta-button secondary"><i class="fas fa-phone"></i> 06 58 74 07
+                <a href="tel:0658740747" class="city-cta-button secondary" id="hero-contact-button"><i
+                        class="fas fa-phone"></i> 06 58 74 07
                     47</a>
             </div>
         </div>
     </header>
 
 
-    <!-- Local Project Highlight 1 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Chantier Local</span>
-                <h2>Maison de Village</h2>
-                <p class="project-desc">Rénovation d'une maison de village typique avec poutres apparentes. Sablage et
-                    traitement des poutres, peinture des inter-solives en blanc pour éclaircir. Pose d'un parquet massif
-                    cloué à l'ancienne.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">12</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">85m²</span>
-                        <span class="p-label">Surfaces rénovées</span>
-                    </div>
-                </div>
-            </div>
-            <div class="local-project-image fade-in">
-                <img src="image/gallery_5.jpg" alt="Chantier Commercy">
-            </div>
-        </div>
-    </section>
+    <!-- Main Content Section -->
+    <main class="city-main-content">
+        <div class="city-content-container">
+            <header class="city-article-header fade-in">
+                <h2 id="context_title_main">Expertise en Peinture & Décoration à Commercy</h2>
+                <div class="divider"></div>
+            </header>
 
-    <!-- Local Project Highlight 2 -->
-    <section class="local-project-section alt-layout" style="background-color: #f8f9fa;">
-        <div class="local-project-container">
-            <div class="local-project-image fade-in">
-                <img src="image/gallery_8.jpg" alt="Peinture salon Commercy">
-            </div>
-            <div class="local-project-content">
-                <span class="project-tag">Rénovation Salon</span>
-                <h2>Salon Lumineux</h2>
-                <p class="project-desc">Transformation complète d'un salon sombre en une pièce à vivre lumineuse.
-                    Démontage des anciennes tapisseries, enduisage complet et application d'une peinture velours blanc
-                    cassé. Le résultat est moderne et épuré.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">5</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">30m²</span>
-                        <span class="p-label">Surface murs</span>
-                    </div>
+            <div class="city-text-grid">
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_2">Un Savoir-faire Artisanal pour votre Intérieur</h3>
+                    <p id="context_description_2">Notre entreprise intervient à Commercy pour transformer vos espaces de
+                        vie. Que ce soit pour une maison de village typique ou un appartement moderne, nous apportons un
+                        soin particulier à la préparation des supports. Le sablage, le traitement des boiseries et
+                        l'application de peintures de haute qualité (finition mate, velours ou satinée) font partie de
+                        nos standards d'excellence.</p>
+                    <p>Nous comprenons l'importance de la luminosité dans un foyer. C'est pourquoi nous conseillons nos
+                        clients sur les nuances de blancs et de couleurs claires pour agrandir visuellement les pièces
+                        et créer une atmosphère chaleureuse et accueillante.</p>
+                </div>
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/Bandeaux-de-bois.jpg" alt="Restauration de boiseries Commercy" id="image_2">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Local Project Highlight 3 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Boiseries</span>
-                <h2>Restauration de Portes Anciennes</h2>
-                <p class="project-desc">Rénovation complète des menuiseries intérieures d'un appartement de style.
-                    Décapage, ponçage fin et application d'une laque tendue satinée pour sublimer les moulures sans les
-                    empâter.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">5</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">8</span>
-                        <span class="p-label">Portes rénovées</span>
-                    </div>
+            <div class="city-text-grid reverse">
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/renovation-toiture-roche-sur-yon-3.jpg" alt="Peinture intérieure Commercy"
+                        id="image_3">
+                </div>
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_3">Rénovation et Protection des Matériaux</h3>
+                    <p id="context_description_3">La peinture n'est pas qu'une question d'esthétique, c'est aussi une
+                        protection durable pour vos murs et plafonds. À Commercy, nous réalisons le décapage et la
+                        restauration complète de vos menuiseries intérieures. L'application d'une laque tendue ou d'un
+                        vernis protecteur permet de sublimer les moulures anciennes sans altérer leur cachet historique.
+                    </p>
+                    <p>Chaque chantier est mené avec une rigueur absolue : protection systématique des sols, enduisage
+                        minutieux pour une surface parfaitement lisse, et nettoyage complet après intervention pour vous
+                        livrer un intérieur prêt à vivre.</p>
                 </div>
             </div>
-            <div class="local-project-image fade-in">
-                <img src="image/gallery_2.jpg" alt="Boiseries Commercy">
+
+            <div class="city-features-text fade-in">
+                <h3>Pourquoi nous confier vos travaux ?</h3>
+                <ul class="features-list-clean">
+                    <li class="feature-item-clean">
+                        <i class="fas fa-check"></i>
+                        <div class="feature-content">
+                            <h4>Garantie et Assurance</h4>
+                            <p>Toutes nos interventions sont couvertes par une garantie décennale pour votre sérénité.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-clock"></i>
+                        <div class="feature-content">
+                            <h4>Respect des Délais</h4>
+                            <p>Nous nous engageons sur un planning précis pour minimiser l'impact sur votre quotidien.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-leaf"></i>
+                        <div class="feature-content">
+                            <h4>Produits Éco-responsables</h4>
+                            <p>Utilisation prioritaire de peintures à faible émission de COV pour un air intérieur sain.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-euro-sign"></i>
+                        <div class="feature-content">
+                            <h4>Devis Clair et Gratuit</h4>
+                            <p>Aucune surprise, chaque poste de dépense est détaillé après une visite technique.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Call to Action -->
     <section class="city-cta-section" id="contact-section">
@@ -171,12 +200,13 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com">contact@nuancesdeco.com</a>
+                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com"
+                                    id="email_address">contact@nuancesdeco.com</a>
                             </p>
                         </div>
                         <div class="contact-item">
                             <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:0658740747">06 58 74 07 47</a></p>
+                            <p class="contact-text"><a href="tel:0658740747" id="phone_number">06 58 74 07 47</a></p>
                         </div>
                     </div>
                 </div>
@@ -202,11 +232,13 @@
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
 
-            navToggle.addEventListener('click', function (e) {
-                e.stopPropagation();
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+            }
 
             // Mobile Dropdown Toggle
             const dropdowns = document.querySelectorAll('.dropdown');
@@ -226,23 +258,37 @@
             });
 
             // Close menu when clicking outside
-            document.body.addEventListener('click', function (e) {
-                if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+            document.addEventListener('click', function (e) {
+                if (navMenu && navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                     navMenu.classList.remove('active');
                     navToggle.classList.remove('active');
                 }
             });
 
-            // Scroll animations
+            // Robust Scroll Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.1 });
+            }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => observer.observe(el));
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
         });
     </script>
 </body>

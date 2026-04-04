@@ -6,18 +6,38 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Réalisations - Nuances Deco</title>
+    <title>Nos Réalisations - Expert Toiture | Travaux de Couverture</title>
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="realisations.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .gallery-title {
+                margin-top: 60px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+                </div>
+                <div class="nav-badges">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -28,137 +48,360 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
+                <li class="nav-item dropdown">
+                    <span class="nav-link dropdown-toggle">Zones d'intervention <i
+                            class="fas fa-chevron-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="couvreur-revigny-sur-ornain.html">Revigny sur Ornain</a></li>
+                        <li><a href="couvreur-bar-le-duc.html">Bar-le-Duc</a></li>
+                        <li><a href="couvreur-vitry-le-francois.html">Vitry-le-François</a></li>
+                        <li><a href="couvreur-saint-dizier.html">Saint-Dizier</a></li>
+                        <li><a href="couvreur-falons-en-champagne.html">Châlons-en-Champagne</a></li>
+                        <li><a href="couvreur-verdun.html">Verdun</a></li>
+                        <li><a href="couvreur-ligny-en-barrois.html">Ligny-en-Barrois</a></li>
+                        <li><a href="couvreur-commercy.html">Commercy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <div class="nav-badges-mobile">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
-    <section class="realisations-hero">
-        <div class="realisations-hero-content fade-in">
-            <h1 class="realisations-hero-title">Projets récents</h1>
-            <p class="realisations-hero-description" id="text_realisations_hero_desc">Rénovation intérieure : peinture,
-                carrelage et pose de parquet. Des finitions modernes et soignées pour votre habitat.</p>
-        </div>
-    </section>
-    <section class="projects-section">
-        <div class="projects-container">
-            <div class="project-card scale-in">
-                <div class="project-image">
-                    <img alt="Projet 1" data-idx="1" id="image_4" src="image/image_4_1.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title" data-text-id="text_project_title_1" id="context_title_4">Comment nos
-                        projets réalisés mettent-ils en valeur notre expertise en finitions modernes ?</h3>
-                    <p class="project-description" data-text-id="text_project_desc_1" id="context_description_4">
-                        Découvrez nos projets de rénovation intérieure. Ils illustrent notre expertise en peinture,
-                        carrelage et pose de parquet, garantissant des finitions modernes et soignées.</p>
-                </div>
-            </div>
-            <div class="project-card scale-in">
-                <div class="project-image">
-                    <img alt="Projet 2" data-idx="1" id="image_5" src="image/image_5_1.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title" data-text-id="text_project_title_2" id="context_title_5">Quels détails de
-                        nos réalisations reflètent la qualité de nos finitions ?</h3>
-                    <p class="project-description" data-text-id="text_project_desc_2" id="context_description_5">
-                        Découvrez nos réalisations en rénovation intérieure, illustrant notre maîtrise de la peinture,
-                        du carrelage et de la pose de parquet, avec des finitions modernes et soignées.</p>
-                </div>
-            </div>
-            <div class="project-card scale-in">
-                <div class="project-image">
-                    <img alt="Projet 3" data-idx="1" id="image_6" src="image/image_6_1.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title" data-text-id="text_project_title_3" id="context_title_6">Quels détails de
-                        finition caractérisent nos projets ?</h3>
-                    <p class="project-description" data-text-id="text_project_desc_3" id="context_description_6">
-                        Découvrez nos projets de rénovation intérieure (peinture, carrelage, pose de parquet) où chaque
-                        réalisation témoigne de notre engagement pour des finitions modernes et soignées.</p>
-                </div>
-            </div>
-            <div class="project-card scale-in">
-                <div class="project-image">
-                    <img alt="Projet 4" data-idx="1" id="image_7" src="image/image_7_1.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title" data-text-id="text_project_title_4" id="context_title_7">Comment
-                        combinez-vous peinture, carrelage et parquet dans vos projets ?</h3>
-                    <p class="project-description" data-text-id="text_project_desc_4" id="context_description_7">Nos
-                        réalisations en peinture, carrelage et pose de parquet illustrent notre expertise en rénovation
-                        intérieure. Chaque projet témoigne de notre souci des finitions modernes et soignées.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Content Removed -->
     <section class="gallery-section">
         <div class="gallery-content fade-in">
-            <h2 class="gallery-title" id="context_title_8">Galerie de réalisations</h2>
-            <p class="gallery-description" data-text-id="text_gallery_desc" id="context_description_8">Nos réalisations
-                illustrent notre maîtrise en peinture, carrelage et pose de parquet, avec une exigence constante pour
-                des finitions intérieures modernes et soignées.</p>
+            <h2 class="gallery-title" id="text_realisations_title">Galerie de Chantiers</h2>
+            <p class="gallery-description" data-text-id="text_realisations_desc" id="text_gallery_desc">Découvrez nos
+                projets
+                de couverture en tuiles, ardoises et zinc, ainsi que nos travaux de rénovation de charpente et
+                zinguerie,
+                réalisés avec professionnalisme et souci du détail.</p>
             <div class="gallery-grid">
                 <div class="gallery-item"><img alt="Galerie 1" class="gallery-img" id="gallery_image_1"
-                        src="image/gallery_1.jpg" data-gallery-index="0" /></div>
+                        src="image/le-toit-devient-trop-vieux.jpg" data-gallery-index="0" /></div>
                 <div class="gallery-item"><img alt="Galerie 2" class="gallery-img" id="gallery_image_2"
-                        src="image/gallery_2.jpg" data-gallery-index="1" /></div>
+                        src="image/renovation-toiture-25012019-1026-1280x428.jpg" data-gallery-index="1" /></div>
                 <div class="gallery-item"><img alt="Galerie 3" class="gallery-img" id="gallery_image_3"
-                        src="image/gallery_3.jpg" data-gallery-index="2" /></div>
+                        src="image/Renovation-toiture-1.jpg" data-gallery-index="2" /></div>
                 <div class="gallery-item"><img alt="Galerie 4" class="gallery-img" id="gallery_image_4"
-                        src="image/gallery_4.jpg" data-gallery-index="3" /></div>
+                        src="image/AdobeStock_165081763-1280x848.jpeg" data-gallery-index="3" /></div>
                 <div class="gallery-item"><img alt="Galerie 5" class="gallery-img" id="gallery_image_5"
-                        src="image/gallery_5.jpg" data-gallery-index="4" /></div>
+                        src="image/Bardeaux-en-tole.jpg" data-gallery-index="4" /></div>
                 <div class="gallery-item"><img alt="Galerie 6" class="gallery-img" id="gallery_image_6"
-                        src="image/gallery_6.jpg" data-gallery-index="5" /></div>
+                        src="image/renovation-toiture-pose-tuile-15102019-1815-1280x960.jpg" data-gallery-index="5" />
+                </div>
                 <div class="gallery-item"><img alt="Galerie 7" class="gallery-img" id="gallery_image_7"
-                        src="image/gallery_7.jpg" data-gallery-index="6" /></div>
+                        src="image/fuite-de-toit-03012019-1153.jpg" data-gallery-index="6" /></div>
                 <div class="gallery-item"><img alt="Galerie 8" class="gallery-img" id="gallery_image_8"
-                        src="image/gallery_8.jpg" data-gallery-index="7" /></div>
+                        src="image/Bandeaux-de-bois.jpg" data-gallery-index="7" /></div>
                 <div class="gallery-item"><img alt="Galerie 9" class="gallery-img" id="gallery_image_9"
-                        src="image/gallery_9.jpg" data-gallery-index="8" /></div>
+                        src="image/Fotolia_58530498_S.jpg" data-gallery-index="8" /></div>
                 <div class="gallery-item"><img alt="Galerie 10" class="gallery-img" id="gallery_image_10"
-                        src="image/gallery_10.jpg" data-gallery-index="9" /></div>
+                        src="image/RENOVATION-TOITURE-01042019-1723.jpg" data-gallery-index="9" /></div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="footer" id="footer-background">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <h3 class="footer-title">Contact</h3>
-                    <p class="footer-subtitle">Pour toute demande de renseignement.</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com" id="email_address"
-                                    style="color: inherit; text-decoration: none;">contact@nuancesdeco.com</a></p>
+    <section class="comparison-section">
+        <div class="comparison-container fade-in">
+            <h2 class="comparison-title">Nos Résultats Avant / Après</h2>
+            <p class="comparison-subtitle">Visualisez la transformation de nos chantiers. Glissez le curseur pour voir
+                l'efficacité de nos interventions.</p>
+            <p class="comparison-disclaimer"><em>*Ces images sont factices et seront remplacées par vos propres
+                    réalisations si vous décidez de travailler avec nous.</em></p>
+
+            <div class="comparison-grid">
+                <!-- Slider 1 -->
+                <div class="comparison-card">
+                    <div class="comparison-slider">
+                        <div class="comparison-after"
+                            style="background-image: url('image/avant_apres/Apres-nettoyage-toiture-1024x768.jpg');">
                         </div>
-                        <div class="contact-item">
-                            <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:06 58 74 07 47" id="phone_number"
-                                    style="color: inherit; text-decoration: none;">06 58 74 07 47</a></p>
+                        <div class="comparison-before"
+                            style="background-image: url('image/avant_apres/avant-nettoyage-toiture-779x1024.jpg');">
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-input"
+                            oninput="handleComparison(this)">
+                        <div class="comparison-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-hand-pointer"></i>
+                            </div>
                         </div>
                     </div>
+                    <div class="comparison-label">Nettoyage de Toiture</div>
                 </div>
-                <div class="footer-form">
-                    <form class="footer-form-content">
-                        <div class="footer-form-group">
-                            <label class="footer-form-label" for="footer-name">Nom et prénom</label>
-                            <input class="footer-form-input" id="footer-name" name="fullname"
-                                placeholder="Entrez votre nom complet" required="" type="text" />
+
+                <!-- Slider 2 -->
+                <div class="comparison-card">
+                    <div class="comparison-slider">
+                        <div class="comparison-after"
+                            style="background-image: url('image/avant_apres/IMG-20250920-WA0018.webp');"></div>
+                        <div class="comparison-before"
+                            style="background-image: url('image/avant_apres/IMG-20250920-WA0017.webp');"></div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-input"
+                            oninput="handleComparison(this)">
+                        <div class="comparison-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-hand-pointer"></i>
+                            </div>
                         </div>
-                        <button class="footer-submit-button" type="submit" id="footer-button">Envoyer votre
-                            demande</button>
-                    </form>
+                    </div>
+                    <div class="comparison-label">Rénovation Complète</div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">© 2025. Tous droits réservés.</p>
+
+                <!-- Slider 3 -->
+                <div class="comparison-card">
+                    <div class="comparison-slider">
+                        <div class="comparison-after"
+                            style="background-image: url('image/avant_apres/toiture-et-facade-apres.jpg.webp');">
+                        </div>
+                        <div class="comparison-before"
+                            style="background-image: url('image/avant_apres/toiture-et-facade-avant-1.jpg');"></div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-input"
+                            oninput="handleComparison(this)">
+                        <div class="comparison-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-hand-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-label">Protection Étanchéité</div>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Mobile Sticky Buttons -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:0658740747" class="sticky-btn call-btn">
+            <i class="fas fa-phone-alt"></i> Appeler
+        </a>
+        <a href="contact.html" class="sticky-btn quote-btn">
+            <i class="fas fa-file-invoice"></i> Devis Gratuit
+        </a>
+    </div>
+
+    <style>
+        .mobile-sticky-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #f2f2f2;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 99999;
+            padding: 10px;
+            justify-content: space-between;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+
+        .sticky-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .call-btn {
+            background-color: #f8f9fa;
+            color: #0A2342;
+            border: 1px solid #e9ecef;
+        }
+
+        .quote-btn {
+            background-color: #FF6600;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-sticky-bar {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* Comparison Section Styles */
+        .comparison-section {
+            padding: 100px 20px;
+            background-color: #f8fbff;
+        }
+
+        .comparison-title {
+            font-size: 2.5rem;
+            color: #0A2342;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .comparison-subtitle {
+            color: #3E5066;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 10px;
+            text-align: center;
+        }
+
+        .comparison-disclaimer {
+            color: #FF6600;
+            font-size: 0.9rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .comparison-card {
+            background: #fff;
+            padding: 12px;
+            border-radius: 24px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-slider {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border-radius: 18px;
+            cursor: ew-resize;
+        }
+
+        .comparison-after,
+        .comparison-before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .comparison-before {
+            z-index: 2;
+            clip-path: inset(0 50% 0 0);
+        }
+
+        .comparison-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            appearance: none;
+            z-index: 10;
+            cursor: ew-resize;
+            margin: 0;
+        }
+
+        .comparison-input::-webkit-slider-thumb {
+            appearance: none;
+            width: 4px;
+            height: 100%;
+            cursor: ew-resize;
+        }
+
+        .comparison-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 3px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 5;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .handle-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background: #FF6600;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: none !important;
+            flex-shrink: 0;
+        }
+
+        .comparison-label {
+            margin-top: 20px;
+            font-weight: 700;
+            color: #0A2342;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            .comparison-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+
+    <script src="components.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const navToggle = document.getElementById('nav-toggle');
@@ -169,12 +412,34 @@
                 navToggle.classList.toggle('active');
             });
 
+            // Mobile Dropdown Toggle
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (toggle) {
+                    toggle.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        // Close other dropdowns
+                        dropdowns.forEach(d => {
+                            if (d !== dropdown) d.classList.remove('active');
+                        });
+
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+
             // Close menu when clicking on a link
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
+                link.addEventListener('click', function (e) {
+                    // Don't close menu if clicking on a dropdown toggle
+                    if (!link.classList.contains('dropdown-toggle')) {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
                 });
             });
 
@@ -205,24 +470,29 @@
                 lastScrollTop = scrollTop;
             });
 
-            // Scroll animations
+            // Robust Scroll Animations
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function (entries) {
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Observe all animated elements
             const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
             animatedElements.forEach(el => {
                 observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
             });
 
             // Gallery Lightbox
@@ -311,6 +581,16 @@
                 }
             });
         });
+
+        function handleComparison(input) {
+            const value = input.value;
+            const slider = input.parentElement;
+            const before = slider.querySelector('.comparison-before');
+            const handle = slider.querySelector('.comparison-handle');
+
+            before.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+            handle.style.left = `${value}%`;
+        }
     </script>
 </body>
 

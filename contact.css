@@ -6,8 +6,8 @@
 
 html {
     overflow-x: hidden;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     position: relative;
 }
 
@@ -15,8 +15,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     position: relative;
     margin: 0;
     padding: 0;
@@ -78,8 +78,8 @@ body {
     padding: 150px 20px 40px;
     background-color: #ffffff;
     text-align: center;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -106,8 +106,8 @@ body {
 .contact-content-section {
     padding: 80px 20px;
     background-color: #ffffff;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -213,10 +213,10 @@ body {
 
 /* Location Section */
 .location-section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #F0F5FA;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -324,21 +324,9 @@ body {
         font-size: 1.1rem;
     }
 
-    .contact-content-section {
-        padding: 60px 20px;
-    }
-
-    .contact-content-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .contact-image-wrapper {
-        max-width: 100%;
-    }
-
+    .contact-content-section,
     .location-section {
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
 
     .location-top {

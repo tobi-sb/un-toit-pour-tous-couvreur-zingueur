@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Services - Nuances Deco</title>
+    <title>Services - Expert Toiture | Votre Couvreur de Confiance</title>
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="services.css" rel="stylesheet" />
@@ -14,45 +14,15 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
-                <li class="nav-item dropdown">
-                    <span class="nav-link dropdown-toggle">Zones d'intervention <i
-                            class="fas fa-chevron-down"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="peintre-revigny-sur-ornain.html">Revigny sur Ornain</a></li>
-                        <li><a href="peintre-bar-le-duc.html">Bar-le-Duc</a></li>
-                        <li><a href="peintre-vitry-le-francois.html">Vitry-le-François</a></li>
-                        <li><a href="peintre-saint-dizier.html">Saint-Dizier</a></li>
-                        <li><a href="peintre-falons-en-champagne.html">Châlons-en-Champagne</a></li>
-                        <li><a href="peintre-verdun.html">Verdun</a></li>
-                        <li><a href="peintre-ligny-en-barrois.html">Ligny-en-Barrois</a></li>
-                        <li><a href="peintre-commercy.html">Commercy</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <section class="achievements-section">
         <div class="achievements-container fade-in">
             <div class="achievements-header">
-                <h2 class="achievements-title">Nos Services</h2>
-                <p class="achievements-desc">Découvrez la qualité de notre travail à travers nos projets récents. Chaque
+                <h2 class="achievements-title" data-text-id="text_services_title">Nos Services</h2>
+                <p class="achievements-desc" data-text-id="text_services_desc">Découvrez la qualité de notre travail à
+                    travers nos projets récents. Chaque
                     projet reflète notre engagement envers l'excellence et la satisfaction client.</p>
             </div>
             <div class="achievements-grid">
@@ -61,11 +31,12 @@
 
                     <div class="achievement-content">
                         <div class="achievement-info">
-                            <h3 class="achievement-item-title"><i class="fas fa-paint-roller theme-icon"></i> Rénovation
-                                de peinture complète</h3>
+                            <h3 class="achievement-item-title" data-text-id="text_services_item_title_1"><i
+                                    class="fas fa-home theme-icon"></i> Couverture & Toiture</h3>
                         </div>
-                        <p class="achievement-item-desc">Rénovation professionnelle avec un service rapide et des
-                            matériaux de qualité.</p>
+                        <p class="achievement-item-desc" data-text-id="text_services_item_desc_1">Pose et rénovation
+                            complète
+                            de toitures en tuiles, ardoises ou zinc pour une protection maximale.</p>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -73,11 +44,11 @@
 
                     <div class="achievement-content">
                         <div class="achievement-info">
-                            <h3 class="achievement-item-title"><i class="fas fa-brush theme-icon"></i> Peinture moderne
-                                intérieure</h3>
+                            <h3 class="achievement-item-title" data-text-id="text_services_item_title_2"><i
+                                    class="fas fa-hammer theme-icon"></i> Charpente & Ossature</h3>
                         </div>
-                        <p class="achievement-item-desc">Rénovation utilisant des techniques innovantes et des finitions
-                            haut de gamme.</p>
+                        <p class="achievement-item-desc" data-text-id="text_services_item_desc_2">Réparation,
+                            traitement et renforcement de charpentes traditionnelles ou fermettes.</p>
                     </div>
                 </div>
                 <!-- Card 3 -->
@@ -85,10 +56,11 @@
 
                     <div class="achievement-content">
                         <div class="achievement-info">
-                            <h3 class="achievement-item-title"><i class="fas fa-layer-group theme-icon"></i> Pose de
-                                parquet traditionnel</h3>
+                            <h3 class="achievement-item-title" data-text-id="text_services_item_title_3"><i
+                                    class="fas fa-droplet theme-icon"></i> Zinguerie & Gouttières</h3>
                         </div>
-                        <p class="achievement-item-desc">Rénovation respectueuse des codes architecturaux traditionnels.
+                        <p class="achievement-item-desc" data-text-id="text_services_item_desc_3">Installation
+                            de systèmes d'évacuation d'eau pluviale en zinc, alu ou PVC pour éviter les infiltrations.
                         </p>
                     </div>
                 </div>
@@ -97,11 +69,11 @@
 
                     <div class="achievement-content">
                         <div class="achievement-info">
-                            <h3 class="achievement-item-title"><i class="fas fa-border-all theme-icon"></i> Carrelage
-                                sur mesure</h3>
+                            <h3 class="achievement-item-title" data-text-id="text_services_item_title_4"><i
+                                    class="fas fa-broom theme-icon"></i> Nettoyage & Démoussage</h3>
                         </div>
-                        <p class="achievement-item-desc">Rénovation personnalisée avec des matériaux de haute qualité et
-                            des finitions exceptionnelles.</p>
+                        <p class="achievement-item-desc" data-text-id="text_services_item_desc_4">Élimination
+                            des mousses et lichens, application de traitement hydrofuge pour raviver votre toit.</p>
                     </div>
                 </div>
                 <!-- Card 5 -->
@@ -109,11 +81,11 @@
 
                     <div class="achievement-content">
                         <div class="achievement-info">
-                            <h3 class="achievement-item-title"><i class="fas fa-leaf theme-icon"></i> Rénovation
-                                éco-responsable</h3>
+                            <h3 class="achievement-item-title" data-text-id="text_services_item_title_5"><i
+                                    class="fas fa-leaf theme-icon"></i> Isolation de Combles</h3>
                         </div>
-                        <p class="achievement-item-desc">Rénovation durable avec un chantier propre et des matériaux
-                            écologiques.</p>
+                        <p class="achievement-item-desc" data-text-id="text_services_item_desc_5">Optimisation
+                            thermique de votre habitat par l'isolation des combles perdus ou aménagés.</p>
                     </div>
                 </div>
                 <!-- Card 6 -->
@@ -121,10 +93,11 @@
 
                     <div class="achievement-content">
                         <div class="achievement-info">
-                            <h3 class="achievement-item-title"><i class="fas fa-magic theme-icon"></i> Transformation
-                                réussie</h3>
+                            <h3 class="achievement-item-title" data-text-id="text_services_item_title_6"><i
+                                    class="fas fa-sun theme-icon"></i> Velux & Fenêtres</h3>
                         </div>
-                        <p class="achievement-item-desc">Résultats avant/après d'une rénovation complète d'appartement.
+                        <p class="achievement-item-desc" data-text-id="text_services_item_desc_6">Pose et remplacement
+                            de fenêtres de toit Velux pour apporter de la lumière à vos combles.
                         </p>
                     </div>
                 </div>
@@ -132,27 +105,6 @@
         </div>
     </section>
 
-    <section class="intervention-section">
-        <div class="intervention-container">
-            <h2 class="intervention-title">Zone d'intervention</h2>
-            <p class="intervention-desc">Nous intervenons dans un rayon de 50km autour de Revigny sur Ornain pour tous
-                vos travaux de peinture et sols.</p>
-            <div class="intervention-list">
-                <a href="peintre-revigny-sur-ornain.html" class="city-badge" style="text-decoration: none;">Revigny sur
-                    Ornain</a>
-                <a href="peintre-bar-le-duc.html" class="city-badge" style="text-decoration: none;">Bar-le-Duc</a>
-                <a href="peintre-vitry-le-francois.html" class="city-badge"
-                    style="text-decoration: none;">Vitry-le-François</a>
-                <a href="peintre-saint-dizier.html" class="city-badge" style="text-decoration: none;">Saint-Dizier</a>
-                <a href="peintre-falons-en-champagne.html" class="city-badge"
-                    style="text-decoration: none;">Châlons-en-Champagne</a>
-                <a href="peintre-verdun.html" class="city-badge" style="text-decoration: none;">Verdun</a>
-                <a href="peintre-ligny-en-barrois.html" class="city-badge"
-                    style="text-decoration: none;">Ligny-en-Barrois</a>
-                <a href="peintre-commercy.html" class="city-badge" style="text-decoration: none;">Commercy</a>
-            </div>
-        </div>
-    </section>
 
     <section class="faq-section">
         <div class="faq-container fade-in">
@@ -168,7 +120,7 @@
                     <h3 class="faq-question" id="text_faq_q2">Gérez-vous l'ensemble du projet de rénovation intérieure ?
                     </h3>
                     <p class="faq-answer" id="text_faq_a2">Oui, nous gérons l'ensemble des travaux de peinture,
-                        carrelage et pose de parquet nécessaires à votre projet de rénovation intérieure.</p>
+                        décoration et protection de vos murs et façades.</p>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question" id="text_faq_q3">Comment préparez-vous les surfaces avant peinture/pose ?
@@ -181,7 +133,7 @@
                     <h3 class="faq-question" id="text_faq_q4">Comment organisez-vous les différentes phases de travaux ?
                     </h3>
                     <p class="faq-answer" id="text_faq_a4">Nous débutons par une préparation minutieuse des surfaces,
-                        suivie de l'exécution des travaux (peinture, carrelage, parquet), puis nous effectuons les
+                        suivie de l'exécution des travaux (peinture, revêtements muraux), puis nous effectuons les
                         finitions soignées et un nettoyage complet.</p>
                 </div>
                 <div class="faq-item">
@@ -192,133 +144,537 @@
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="footer" id="footer-background">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <h3 class="footer-title">Contact</h3>
-                    <p class="footer-subtitle">Pour toute demande de renseignement.</p>
 
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com" id="email_address"
-                                    style="color: inherit; text-decoration: none;">contact@nuancesdeco.com</a></p>
+    <section class="intervention-section">
+        <div class="intervention-container">
+            <h2 class="intervention-title">Secteur Géo</h2>
+            <p class="intervention-desc">Nous intervenons dans un rayon de 50km autour de Revigny sur Ornain
+                pour toutes
+                vos réparations et travaux de couverture.</p>
+            <div class="intervention-list">
+                <a href="couvreur-revigny-sur-ornain.html" class="city-badge" style="text-decoration: none;">Revigny sur
+                    Ornain</a>
+                <a href="couvreur-bar-le-duc.html" class="city-badge" style="text-decoration: none;">Bar-le-Duc</a>
+                <a href="couvreur-vitry-le-francois.html" class="city-badge"
+                    style="text-decoration: none;">Vitry-le-François</a>
+                <a href="couvreur-saint-dizier.html" class="city-badge" style="text-decoration: none;">Saint-Dizier</a>
+                <a href="couvreur-falons-en-champagne.html" class="city-badge"
+                    style="text-decoration: none;">Châlons-en-Champagne</a>
+                <a href="couvreur-verdun.html" class="city-badge" style="text-decoration: none;">Verdun</a>
+                <a href="couvreur-ligny-en-barrois.html" class="city-badge"
+                    style="text-decoration: none;">Ligny-en-Barrois</a>
+                <a href="couvreur-commercy.html" class="city-badge" style="text-decoration: none;">Commercy</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Estimation Section -->
+    <section class="estimation-section" id="estimation">
+        <div class="estimation-container fade-in">
+            <h2 class="estimation-title">Estimez vos travaux de toiture</h2>
+            <p class="estimation-subtitle">Obtenez un chiffrage immédiat pour votre projet de rénovation ou d'entretien.
+            </p>
+
+            <div class="estimation-box">
+                <!-- Progress -->
+                <div class="est-progress">
+                    <div class="est-step active" data-step="1">1</div>
+                    <div class="est-line"></div>
+                    <div class="est-step" data-step="2">2</div>
+                    <div class="est-line"></div>
+                    <div class="est-step" data-step="3">3</div>
+                </div>
+
+                <!-- Step 1: Type -->
+                <div class="est-content active" id="est-step-1">
+                    <h3>Quel type de travaux ?</h3>
+                    <div class="est-options">
+                        <div class="est-option" onclick="selectType('entretien', this)">
+                            <i class="fas fa-broom"></i>
+                            <span>Nettoyage / Mousses</span>
                         </div>
-                        <div class="contact-item">
-                            <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:06 58 74 07 47" id="phone_number"
-                                    style="color: inherit; text-decoration: none;">06 58 74 07 47</a></p>
+                        <div class="est-option" onclick="selectType('reparation', this)">
+                            <i class="fas fa-tools"></i>
+                            <span>Réparation / Fuite</span>
+                        </div>
+                        <div class="est-option" onclick="selectType('renovation', this)">
+                            <i class="fas fa-home"></i>
+                            <span>Rénovation Complète</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="footer-form">
-                    <form class="footer-form-content">
-                        <div class="footer-form-group">
-                            <label for="footer-name" class="footer-form-label">Nom et prénom</label>
-                            <input type="text" id="footer-name" name="fullname" class="footer-form-input"
-                                placeholder="Entrez votre nom complet" required>
+                <!-- Step 2: Surface & State -->
+                <div class="est-content" id="est-step-2">
+                    <h3>Détails de la toiture</h3>
+                    <div class="est-form-group">
+                        <label>Surface de toiture approx. (m²)</label>
+                        <input type="number" id="est-surface" placeholder="Ex: 100" min="1">
+                    </div>
+                    <div class="est-form-group">
+                        <label>État actuel du toit</label>
+                        <div class="est-state-options">
+                            <div class="est-state" onclick="selectState('bon', this)">Bon</div>
+                            <div class="est-state" onclick="selectState('moyen', this)">Moyen</div>
+                            <div class="est-state" onclick="selectState('mauvais', this)">Mauvais (Dégâts)</div>
                         </div>
-                        <button type="submit" class="footer-submit-button" id="footer-button">Envoyer votre
-                            demande</button>
-                    </form>
+                    </div>
+                    <button class="est-btn-next" onclick="calculateEstimation()">Voir l'estimation</button>
+                    <button class="est-btn-back" onclick="goToStep(1)">Retour</button>
+                </div>
+
+                <!-- Step 3: Result -->
+                <div class="est-content" id="est-step-3">
+                    <h3>Votre Estimation</h3>
+                    <div class="est-result-price">
+                        <span id="price-min">0</span>€ - <span id="price-max">0</span>€
+                    </div>
+                    <p class="est-disclaimer">*Cette estimation est donnée à titre indicatif. Le prix final peut varier
+                        selon la hauteur et l'accessibilité.</p>
+                    <a href="contact.html" class="est-cta-final">Demander un devis gratuit</a>
+                    <button class="est-btn-back" onclick="goToStep(2)">Modifier</button>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">© 2025. Tous droits réservés.</p>
-            </div>
         </div>
-    </footer>
+    </section>
+
+    <style>
+        /* CSS for Estimation Section */
+        .estimation-section {
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #eef2f5 100%);
+        }
+
+        .estimation-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .estimation-title {
+            font-size: 2.5rem;
+            color: #0A2342;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .estimation-subtitle {
+            font-size: 1.1rem;
+            color: #3E5066;
+            margin-bottom: 40px;
+        }
+
+        .estimation-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            min-height: 400px;
+        }
+
+        /* Progress Bar */
+        .est-progress {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .est-step {
+            width: 35px;
+            height: 35px;
+            background: #e0e0e0;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .est-step.active {
+            background: #FF6600;
+        }
+
+        .est-line {
+            width: 50px;
+            height: 3px;
+            background: #e0e0e0;
+            margin: 0 10px;
+        }
+
+        /* Content Steps */
+        .est-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .est-content.active {
+            display: block;
+        }
+
+        .est-content h3 {
+            font-size: 1.5rem;
+            color: #0A2342;
+            margin-bottom: 30px;
+        }
+
+        /* Step 1 Options */
+        .est-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .est-option {
+            border: 2px solid #eee;
+            border-radius: 15px;
+            padding: 30px 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .est-option:hover,
+        .est-option.selected {
+            border-color: #FF6600;
+            background: #fff5f0;
+            transform: translateY(-5px);
+        }
+
+        .est-option i {
+            font-size: 2.5rem;
+            color: #0A2342;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .est-option span {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Step 2 Form */
+        .est-form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .est-form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .est-form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+        }
+
+        .est-state-options {
+            display: flex;
+            gap: 15px;
+        }
+
+        .est-state {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .est-state:hover,
+        .est-state.selected {
+            border-color: #FF6600;
+            background: #fff5f0;
+            color: #FF6600;
+        }
+
+        /* Buttons */
+        .est-btn-next,
+        .est-cta-final {
+            background: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .est-btn-next:hover,
+        .est-cta-final:hover {
+            transform: scale(1.05);
+            background: #e65c00;
+        }
+
+        .est-btn-back {
+            background: transparent;
+            color: #666;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+            text-decoration: underline;
+            display: block;
+            margin: 20px auto 0;
+            font-size: 0.9rem;
+        }
+
+        /* Step 3 Result */
+        .est-result-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #FF6600;
+            margin: 20px 0;
+        }
+
+        .est-disclaimer {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .estimation-section {
+                padding: 40px 20px;
+            }
+
+            .est-options {
+                grid-template-columns: 1fr;
+            }
+
+            .est-state-options {
+                flex-direction: column;
+            }
+
+            .est-result-price {
+                font-size: 2.5rem;
+            }
+
+            .estimation-box {
+                padding: 20px;
+            }
+        }
+    </style>
 
     <script>
+        let estData = {
+            type: '',
+            surface: 0,
+            state: ''
+        };
+
+        function selectType(type, el) {
+            estData.type = type;
+            // Remove selected from siblings
+            document.querySelectorAll('.est-option').forEach(e => e.classList.remove('selected'));
+            el.classList.add('selected');
+            setTimeout(() => goToStep(2), 300);
+        }
+
+        function selectState(state, el) {
+            estData.state = state;
+            document.querySelectorAll('.est-state').forEach(e => e.classList.remove('selected'));
+            el.classList.add('selected');
+        }
+
+        function goToStep(step) {
+            // Validate step 2
+            if (step === 3) {
+                estData.surface = document.getElementById('est-surface').value;
+                if (!estData.surface || !estData.state) {
+                    alert("Veuillez remplir la surface et l'état.");
+                    return;
+                }
+            }
+
+            // Hide all steps
+            document.querySelectorAll('.est-content').forEach(e => e.classList.remove('active'));
+            // Show target step
+            document.getElementById('est-step-' + step).classList.add('active');
+
+            // Update progress
+            document.querySelectorAll('.est-step').forEach((e, index) => {
+                if (index + 1 <= step) e.classList.add('active');
+                else e.classList.remove('active');
+            });
+        }
+
+        function calculateEstimation() {
+            // 1. Récupérer la surface actuelle
+            estData.surface = document.getElementById('est-surface').value;
+
+            // Validation
+            if (!estData.surface || estData.surface <= 0) {
+                alert("Veuillez entrer une surface valide (en m²).");
+                return;
+            }
+            if (!estData.state) {
+                alert("Veuillez sélectionner l'état des supports.");
+                return;
+            }
+
+            let minPrice = 0;
+            let maxPrice = 0;
+            const surface = parseInt(estData.surface);
+
+            // 2. Tarifs de base par m² (Main d'œuvre + Fournitures standard)
+            // Basé sur les prix artisans 2025
+            let pricePerM2_Min = 0;
+            let pricePerM2_Max = 0;
+
+            if (estData.type === 'entretien') {
+                // Nettoyage / Démoussage / Hydrofuge
+                pricePerM2_Min = 15;
+                pricePerM2_Max = 25;
+            } else if (estData.type === 'reparation') {
+                // Réparations ponctuelles / Fuites
+                pricePerM2_Min = 40;
+                pricePerM2_Max = 80;
+            } else {
+                // Rénovation complète (Tuiles + Liteaux)
+                pricePerM2_Min = 80;
+                pricePerM2_Max = 150;
+            }
+
+            // 3. Impact de l'état (Préparation nécessaire)
+            if (estData.state === 'moyen') {
+                pricePerM2_Min *= 1.2;
+                pricePerM2_Max *= 1.2;
+            } else if (estData.state === 'mauvais') {
+                pricePerM2_Min *= 1.5;
+                pricePerM2_Max *= 1.6;
+            }
+
+            // 4. Impact de la surface (Frais fixes / Échelle)
+            // Petites surfaces coûtent plus cher au m²
+            if (surface < 20) {
+                pricePerM2_Min *= 1.4; // Forfait déplacement/installation impacte plus
+                pricePerM2_Max *= 1.4;
+            } else if (surface < 50) {
+                pricePerM2_Min *= 1.15;
+                pricePerM2_Max *= 1.15;
+            }
+
+            // Calcul final
+            minPrice = Math.round(surface * pricePerM2_Min);
+            maxPrice = Math.round(surface * pricePerM2_Max);
+
+            // Affichage formaté (ex: 1 200)
+            document.getElementById('price-min').innerText = minPrice.toLocaleString('fr-FR');
+            document.getElementById('price-max').innerText = maxPrice.toLocaleString('fr-FR');
+
+            goToStep(3);
+        }
+    </script>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="components.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-
-            navToggle.addEventListener('click', function () {
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
-
-            // Mobile Dropdown Toggle
-            const dropdowns = document.querySelectorAll('.dropdown');
-            dropdowns.forEach(dropdown => {
-                const toggle = dropdown.querySelector('.dropdown-toggle');
-                if (toggle) {
-                    toggle.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-
-                        // Close other dropdowns
-                        dropdowns.forEach(d => {
-                            if (d !== dropdown) d.classList.remove('active');
-                        });
-
-                        dropdown.classList.toggle('active');
-                    });
-                }
-            });
-
-            // Close menu when clicking on a link
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
-                });
-            });
-
-            // Highlight active navigation link
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-            navLinks.forEach(link => {
-                const linkPage = link.getAttribute('href');
-                if (linkPage === currentPage) {
-                    link.classList.add('active');
-                }
-            });
-
-            // Navbar scroll animation
-            const navbar = document.querySelector('.navbar');
-            let lastScrollTop = 0;
-
-            window.addEventListener('scroll', function () {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (scrollTop > lastScrollTop && scrollTop > 100) {
-                    // Scrolling down
-                    navbar.classList.add('hidden');
-                } else {
-                    // Scrolling up
-                    navbar.classList.remove('hidden');
-                }
-
-                lastScrollTop = scrollTop;
-            });
-
-            // Scroll animations
+            // Robust Scroll Animations
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function (entries) {
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Observe all animated elements
             const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
             animatedElements.forEach(el => {
                 observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
             });
         });
     </script>
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:0658740747" class="sticky-btn-call">
+            <i class="fas fa-phone-alt"></i> Appeler
+        </a>
+        <a href="contact.html" class="sticky-btn-quote">
+            <i class="fas fa-file-invoice"></i> Devis Gratuit
+        </a>
+    </div>
+
+    <style>
+        .mobile-sticky-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #f2f2f2;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 99999;
+            padding: 10px;
+            justify-content: space-between;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+
+        .sticky-btn-call,
+        .sticky-btn-quote {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        .sticky-btn-call {
+            background: #fff;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+
+        .sticky-btn-quote {
+            background: #FF6600;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-sticky-bar {
+                display: flex;
+            }
+        }
+    </style>
 </body>
 
 </html>

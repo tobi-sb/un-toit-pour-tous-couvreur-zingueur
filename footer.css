@@ -1,17 +1,20 @@
-/* Footer Component - CSS réutilisable */
 .footer {
     background-color: #051126;
     color: #ffffff;
-    padding: 60px 20px 30px;
-    width: 100vw;
-    max-width: 100vw;
+    padding: 100px 20px 50px;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
     position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    border: none !important;
+    margin-top: -1px; /* Fix sub-pixel gaps/white lines between sections */
+    display: block;
 }
 
 .footer-container {
-    max-width: 1200px;
+
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -30,6 +33,7 @@
 .footer-title {
     font-size: 2rem;
     font-weight: 700;
+    margin-top: 0;
     margin-bottom: 1rem;
     color: #ffffff;
 }
@@ -38,6 +42,35 @@
     font-size: 1rem;
     color: #B8C5D6;
     margin-bottom: 2rem;
+}
+
+.footer-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-badges .cert-badge {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-badges .cert-badge i {
+    font-size: 1.1rem;
+    color: #FF6600;
+}
+
+.footer-badges .cert-badge.google i {
+    color: #4285F4;
 }
 
 .contact-info {

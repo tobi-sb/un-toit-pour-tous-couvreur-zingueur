@@ -19,8 +19,20 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html">Wilmart</a>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+                </div>
+                <div class="nav-badges">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -45,7 +57,18 @@
                         <li><a href="peintre-commercy.html">Commercy</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <div class="nav-badges-mobile">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
@@ -54,94 +77,100 @@
     <header class="city-hero">
         <div class="city-hero-content fade-in">
             <div class="city-label"><i class="fas fa-map-marker-alt"></i> Ligny-en-Barrois</div>
-            <h1 class="city-hero-title">Artisan Peintre à Ligny-en-Barrois</h1>
-            <p class="city-hero-subtitle">Votre intérieur transformé par un professionnel de la peinture et des sols</p>
+            <h1 class="city-hero-title" id="text_hero_title">Artisan Peintre à Ligny-en-Barrois</h1>
+            <p class="city-hero-subtitle" id="text_hero_desc">Votre intérieur transformé par un professionnel de la
+                peinture et de la décoration</p>
             <div class="city-hero-buttons">
                 <a href="#contact-section" class="city-cta-button primary">Demander un Devis Gratuit</a>
-                <a href="tel:0658740747" class="city-cta-button secondary"><i class="fas fa-phone"></i> 06 58 74 07
+                <a href="tel:0658740747" class="city-cta-button secondary" id="hero-contact-button"><i
+                        class="fas fa-phone"></i> 06 58 74 07
                     47</a>
             </div>
         </div>
     </header>
 
 
-    <!-- Local Project Highlight 1 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Chantier Local</span>
-                <h2>Maison de Maître Rénovée</h2>
-                <p class="project-desc">Restauration d'une belle demeure en centre-ville. Les plafonds fissurés ont été
-                    entoilés et repris intégralement. Les boiseries ont été mises en valeur avec une peinture satinée
-                    contrastant avec le mat profond des murs.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">15</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">140m²</span>
-                        <span class="p-label">Surfaces rénovées</span>
-                    </div>
-                </div>
-            </div>
-            <div class="local-project-image fade-in">
-                <img src="image/image_13_1.jpg" alt="Chantier Ligny-en-Barrois">
-            </div>
-        </div>
-    </section>
+    <!-- Main Content Section -->
+    <main class="city-main-content">
+        <div class="city-content-container">
+            <header class="city-article-header fade-in">
+                <h2 id="context_title_main">Expertise en Peinture & Décoration à Ligny-en-Barrois</h2>
+                <div class="divider"></div>
+            </header>
 
-    <!-- Local Project Highlight 2 -->
-    <section class="local-project-section alt-layout" style="background-color: #f8f9fa;">
-        <div class="local-project-container">
-            <div class="local-project-image fade-in">
-                <img src="image/image_8_1.jpg" alt="Escalier Ligny-en-Barrois">
-            </div>
-            <div class="local-project-content">
-                <span class="project-tag">Rénovation d'Escalier</span>
-                <h2>Mise en peinture Cage d'Escalier</h2>
-                <p class="project-desc">Travail en hauteur pour rénover une cage d'escalier sur trois niveaux. Ponçage
-                    des marches, vitrification et peinture des murs en gris perle pour moderniser l'ensemble. Sécurité
-                    et propreté garanties.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">5</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">3</span>
-                        <span class="p-label">Niveaux traités</span>
-                    </div>
+            <div class="city-text-grid">
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_2">Sublimez votre Patrimoine à Ligny</h3>
+                    <p id="context_description_2">Notre entreprise de peinture met son savoir-faire au service de la
+                        préservation et de l'embellissement des demeures à Ligny-en-Barrois. Qu'il s'agisse de la
+                        restauration d'une prestigieuse maison de maître en centre-ville ou de la modernisation d'un
+                        pavillon contemporain, nous intervenons avec la même exigence de qualité. Nous maîtrisons les
+                        techniques d'entoilage pour les plafonds fissurés et l'application de peintures aux finitions
+                        mates, satinées ou veloutées.</p>
+                    <p>La mise en valeur des boiseries et des volumes est au cœur de notre démarche décorative. En
+                        jouant sur les contrastes et les textures, nous redonnons du caractère à vos espaces de vie tout
+                        en respectant l'âme de votre bâti linéen. Chaque chantier est une opportunité de créer une
+                        harmonie unique, adaptée à votre style de vie.</p>
+                </div>
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/le-toit-devient-trop-vieux.jpg" alt="Rénovation maison Ligny-en-Barrois"
+                        id="image_2">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Local Project Highlight 3 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Revêtement de Sol</span>
-                <h2>Pose de Parquet Stratifié</h2>
-                <p class="project-desc">Modernisation d'un salon-séjour par le remplacement d'une moquette ancienne.
-                    Pose d'un sol stratifié haute résistance classe 33, imitation chêne rustique, avec sous-couche
-                    acoustique intégrée.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">2</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">40m²</span>
-                        <span class="p-label">Surface posée</span>
-                    </div>
+            <div class="city-text-grid reverse">
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/Renovation-toiture-1.jpg" alt="Décoration intérieure Ligny" id="image_3">
+                </div>
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_3">Techniques Modernes & Finitions Précises</h3>
+                    <p id="context_description_3">Nous intervenons sur tous les supports, y compris pour des travaux
+                        complexes en hauteur comme la rénovation complète de cages d'escalier sur plusieurs niveaux.
+                        Notre expertise s'étend également aux enduits décoratifs, tels que l'effet béton ciré, pour
+                        apporter une touche minérale et contemporaine à vos pièces de vie. Nous assurons un travail de
+                        préparation minutieux incluant ponçage, vitrification et mise en peinture soignée.</p>
+                    <p>Choisir notre entreprise à Ligny-en-Barrois, c'est s'assurer d'un chantier propre, organisé et
+                        respectueux de votre environnement. Nous utilisons des produits professionnels à faible impact
+                        environnemental et garantissons une exécution dans les délais convenus. Notre objectif : votre
+                        entière satisfaction à travers un résultat premium et durable.</p>
                 </div>
             </div>
-            <div class="local-project-image fade-in">
-                <img src="image/image_14_1.jpg" alt="Parquet Ligny">
+
+            <div class="city-features-text fade-in">
+                <h3>Pourquoi Nous Faire Confiance à Ligny ?</h3>
+                <ul class="features-list-clean">
+                    <li class="feature-item-clean">
+                        <i class="fas fa-medal"></i>
+                        <div class="feature-content">
+                            <h4>Excellence Artisanale</h4>
+                            <p>Un savoir-faire reconnu pour des finitions soignées et une esthétique parfaite.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="feature-content">
+                            <h4>Accompagnement Déco</h4>
+                            <p>Des conseils experts sur le choix des teintes, des matières et des ambiances.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="feature-content">
+                            <h4>Garanties Solides</h4>
+                            <p>Tous nos travaux sont couverts par une assurance décennale pour votre tranquillité.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-leaf"></i>
+                        <div class="feature-content">
+                            <h4>Éco-responsabilité</h4>
+                            <p>Utilisation de peintures respectueuses de la santé et de l'environnement.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Call to Action -->
     <section class="city-cta-section" id="contact-section">
@@ -170,12 +199,13 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com">contact@nuancesdeco.com</a>
+                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com"
+                                    id="email_address">contact@nuancesdeco.com</a>
                             </p>
                         </div>
                         <div class="contact-item">
                             <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:0658740747">06 58 74 07 47</a></p>
+                            <p class="contact-text"><a href="tel:0658740747" id="phone_number">06 58 74 07 47</a></p>
                         </div>
                     </div>
                 </div>
@@ -201,11 +231,13 @@
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
 
-            navToggle.addEventListener('click', function (e) {
-                e.stopPropagation();
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+            }
 
             // Mobile Dropdown Toggle
             const dropdowns = document.querySelectorAll('.dropdown');
@@ -225,23 +257,37 @@
             });
 
             // Close menu when clicking outside
-            document.body.addEventListener('click', function (e) {
-                if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+            document.addEventListener('click', function (e) {
+                if (navMenu && navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                     navMenu.classList.remove('active');
                     navToggle.classList.remove('active');
                 }
             });
 
-            // Scroll animations
+            // Robust Scroll Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.1 });
+            }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => observer.observe(el));
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
         });
     </script>
 </body>

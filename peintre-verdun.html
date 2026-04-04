@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow" />
     <title>Peintre et Décorateur à Verdun | Finitions Soignées</title>
     <meta name="description"
-        content="Artisan peintre à Verdun. L'expert de vos travaux de peinture, décoration et revêtements de sols pour une maison unique." />
+        content="Artisan peintre à Verdun. L'expert de vos travaux de peinture, décoration et revêtements muraux pour une maison unique." />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -19,8 +19,20 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html">Wilmart</a>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+                </div>
+                <div class="nav-badges">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -45,7 +57,18 @@
                         <li><a href="peintre-commercy.html">Commercy</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <div class="nav-badges-mobile">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
@@ -54,95 +77,98 @@
     <header class="city-hero">
         <div class="city-hero-content fade-in">
             <div class="city-label"><i class="fas fa-map-marker-alt"></i> Verdun</div>
-            <h1 class="city-hero-title">Rénovation & Peinture à Verdun</h1>
-            <p class="city-hero-subtitle">Votre partenaire local pour transformer vos espaces avec goût et
+            <h1 class="city-hero-title" id="text_hero_title">Rénovation & Peinture à Verdun</h1>
+            <p class="city-hero-subtitle" id="text_hero_desc">Votre partenaire local pour transformer vos espaces with
+                goût et
                 professionnalisme</p>
             <div class="city-hero-buttons">
                 <a href="#contact-section" class="city-cta-button primary">Demander un Devis Gratuit</a>
-                <a href="tel:0658740747" class="city-cta-button secondary"><i class="fas fa-phone"></i> 06 58 74 07
+                <a href="tel:0658740747" class="city-cta-button secondary" id="hero-contact-button"><i
+                        class="fas fa-phone"></i> 06 58 74 07
                     47</a>
             </div>
         </div>
     </header>
 
 
-    <!-- Local Project Highlight 1 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Chantier Verdunois</span>
-                <h2>Rafraîchissement Maison Faubourg Pavé</h2>
-                <p class="project-desc">Remise au goût du jour des pièces principales d'une maison traditionnelle.
-                    Création d'une harmonie colorée sur-mesure pour unifier le salon et la salle à manger. Les
-                    radiateurs en fonte ont été rénovés et repeints.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">6</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">70m²</span>
-                        <span class="p-label">Surfaces rénovées</span>
-                    </div>
-                </div>
-            </div>
-            <div class="local-project-image fade-in">
-                <img src="image/image_2_2.jpg" alt="Maison Verdun">
-            </div>
-        </div>
-    </section>
+    <!-- Main Content Section -->
+    <main class="city-main-content">
+        <div class="city-content-container">
+            <header class="city-article-header fade-in">
+                <h2 id="context_title_main">Expertise en Peinture & Décoration à Verdun</h2>
+                <div class="divider"></div>
+            </header>
 
-    <!-- Local Project Highlight 2 -->
-    <section class="local-project-section alt-layout" style="background-color: #f8f9fa;">
-        <div class="local-project-container">
-            <div class="local-project-image fade-in">
-                <img src="image/image_8_2.jpg" alt="Rénovation chambre Verdun">
-            </div>
-            <div class="local-project-content">
-                <span class="project-tag">Chambre Enfant</span>
-                <h2>Décoration Chambre d'Enfant</h2>
-                <p class="project-desc">Aménagement d'un espace ludique et apaisant. Utilisation de peintures
-                    écologiques. Pose d'un papier peint à motifs et peinture d'un plafond étoilé pour créer un cocon
-                    unique.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">2</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">12m²</span>
-                        <span class="p-label">Surface chambre</span>
-                    </div>
+            <div class="city-text-grid">
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_2">Sublimez votre Habitat à Verdun</h3>
+                    <p id="context_description_2">Notre entreprise de peinture intervient dans tout le secteur de Verdun
+                        pour donner vie à vos projets de rénovation. Qu'il s'agisse de rafraîchir une maison
+                        traditionnelle au Faubourg Pavé ou de moderniser un appartement en centre-ville, nous apportons
+                        un soin extrême aux finitions. Nous créons des harmonies colorées sur-mesure et redonnons de
+                        l'éclat à vos éléments authentiques, comme les radiateurs en fonte ou les boiseries anciennes.
+                    </p>
+                    <p>La qualité de notre travail repose sur une préparation méticuleuse des supports. Enduisage
+                        complet, ponçage de précision et application de peintures professionnelles (mate, velours ou
+                        satinée) garantissent un résultat durable et esthétique qui valorise votre patrimoine
+                        immobilier.</p>
+                </div>
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/Fotolia_58530498_S.jpg" alt="Rénovation intérieure Verdun" id="image_2">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Local Project Highlight 3 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Résidence Secondaire</span>
-                <h2>Rénovation Maison de Campagne</h2>
-                <p class="project-desc">Remise en état extérieur d'une bâtisse de caractère. Décapage et lasure des
-                    colombages, peinture des volets en bois rouge basque. Protection durable des boiseries contre
-                    l'humidité.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">10</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">25</span>
-                        <span class="p-label">Volets traités</span>
-                    </div>
+            <div class="city-text-grid reverse">
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/Bandeaux-de-bois.jpg" alt="Décoration murale Verdun" id="image_3">
+                </div>
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_3">Décoration Créative & Éco-responsable</h3>
+                    <p id="context_description_3">Nous vous accompagnons également dans l'aménagement d'espaces dédiés,
+                        comme les chambres d'enfants ou les suites parentales. Pose de papiers peints panoramiques,
+                        création de murs d'accent ou application de peintures écologiques à faible émission de COV :
+                        nous allions design et respect de votre santé.</p>
+                    <p>Chaque intervention est menée avec une rigueur absolue. Nous protégeons systématiquement vos
+                        meubles et sols, et nous nous engageons à livrer un chantier parfaitement propre dans les délais
+                        impartis. Votre satisfaction est notre plus belle réussite à Verdun.</p>
                 </div>
             </div>
-            <div class="local-project-image fade-in">
-                <img src="image/gallery_10.jpg" alt="Maison campagne Verdun">
+
+            <div class="city-features-text fade-in">
+                <h3>Pourquoi nous choisir à Verdun ?</h3>
+                <ul class="features-list-clean">
+                    <li class="feature-item-clean">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <div class="feature-content">
+                            <h4>Travail de Haute Précision</h4>
+                            <p>Des découpes parfaites et des surfaces lisses pour un rendu haut de gamme.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-brush"></i>
+                        <div class="feature-content">
+                            <h4>Large Choix Decoratif</h4>
+                            <p>Des milliers de teintes et de textures pour personnaliser votre intérieur.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-user-check"></i>
+                        <div class="feature-content">
+                            <h4>Conseils d'Expert</h4>
+                            <p>Nous vous guidons sur les tendances et l'optimisation de la luminosité.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="feature-content">
+                            <h4>Sérénité Garantie</h4>
+                            <p>Assurance décennale et respect strict de votre cadre de vie.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Call to Action -->
     <section class="city-cta-section" id="contact-section">
@@ -171,12 +197,13 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com">contact@nuancesdeco.com</a>
+                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com"
+                                    id="email_address">contact@nuancesdeco.com</a>
                             </p>
                         </div>
                         <div class="contact-item">
                             <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:0658740747">06 58 74 07 47</a></p>
+                            <p class="contact-text"><a href="tel:0658740747" id="phone_number">06 58 74 07 47</a></p>
                         </div>
                     </div>
                 </div>
@@ -202,11 +229,13 @@
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
 
-            navToggle.addEventListener('click', function (e) {
-                e.stopPropagation();
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+            }
 
             // Mobile Dropdown Toggle
             const dropdowns = document.querySelectorAll('.dropdown');
@@ -226,23 +255,37 @@
             });
 
             // Close menu when clicking outside
-            document.body.addEventListener('click', function (e) {
-                if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+            document.addEventListener('click', function (e) {
+                if (navMenu && navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                     navMenu.classList.remove('active');
                     navToggle.classList.remove('active');
                 }
             });
 
-            // Scroll animations
+            // Robust Scroll Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.1 });
+            }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => observer.observe(el));
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
         });
     </script>
 </body>

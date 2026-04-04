@@ -12,12 +12,19 @@
     z-index: 10010;
     padding: 0;
     margin: 0;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for hidden state */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
 }
 
 .nav-container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +33,15 @@
     background: #ffffff;
 }
 
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: #0A2342;
     position: relative;
     z-index: 10014;
@@ -41,7 +54,37 @@
 }
 
 .logo-link:hover {
-    color: #555;
+    color: #FF6600;
+}
+
+/* Badges style pill */
+.nav-badges {
+    display: flex;
+    gap: 12px;
+}
+
+.cert-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #444;
+    background: #f8fbff;
+    padding: 6px 14px;
+    border-radius: 50px;
+    border: 1px solid #eef2f5;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.cert-badge i {
+    color: #FF6600;
+    font-size: 0.9rem;
+}
+
+.cert-badge.google i {
+    color: #4285F4;
 }
 
 /* Desktop Menu */
@@ -60,7 +103,8 @@
 .nav-link {
     color: #0A2342;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
     transition: color 0.3s;
     position: relative;
 }
@@ -98,8 +142,8 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 24px;
+    width: 28px;
+    height: 20px;
     cursor: pointer;
     padding: 0;
     background: transparent;
@@ -118,7 +162,7 @@
 }
 
 .nav-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
 .nav-toggle.active .bar:nth-child(2) {
@@ -126,16 +170,26 @@
 }
 
 .nav-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Mobile Menu */
+.nav-badges-mobile {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .nav-badges {
+        display: none;
+        /* On cache les badges sur tablette/mobile pour laisser de la place au menu */
+    }
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: flex;
     }
 
-    /* Menu slide depuis la droite - 100% width */
     .nav-menu {
         position: fixed;
         top: 0;
@@ -149,7 +203,6 @@
         align-items: center;
         padding-top: 60px;
         padding-bottom: 100px;
-        /* Add space for scrolling */
         transform: translateX(100%);
         transition: transform 0.3s ease;
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
@@ -191,18 +244,33 @@
     .nav-link:hover {
         background: #E8F1F8;
     }
+
+    .nav-badges-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .nav-badges-mobile .cert-badge {
+        background: #f8fbff;
+        width: fit-content;
+    }
 }
 
 /* Desktop padding */
 @media (min-width: 769px) {
     .nav-container {
-        padding: 20px 60px;
+        padding: 15px 40px;
     }
 }
 
 @media (min-width: 1201px) {
     .nav-container {
-        padding: 20px 80px;
+        padding: 15px 80px;
     }
 }
 
@@ -252,7 +320,6 @@
     background-color: #f0f5fa;
     color: #FF6600;
     padding-left: 25px;
-    /* Petit effet de glissement */
 }
 
 .dropdown-toggle i {
@@ -296,18 +363,15 @@
         box-sizing: border-box;
     }
 
-    /* Force display block when active, using !important to override any specific hover states */
     .dropdown.active .dropdown-menu {
         display: block !important;
         animation: fadeIn 0.3s ease;
     }
 
     .dropdown:hover .dropdown-menu {
-        /* On mobile, strictly disable hover opening unless active */
         display: none;
     }
 
-    /* Ensure active state wins over hover state */
     .dropdown.active:hover .dropdown-menu {
         display: block !important;
     }

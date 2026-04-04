@@ -92,7 +92,7 @@ section {
 
 /* Services Hero Section */
 .services-hero {
-    padding: 150px 20px 40px;
+    padding: 150px 40px 100px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -117,7 +117,7 @@ section {
 
 /* Services Gallery */
 .services-gallery {
-    padding: 40px 20px 80px;
+    padding: 100px 20px;
     background-color: #ffffff;
 }
 
@@ -153,7 +153,7 @@ section {
 /* Reviews Section */
 .reviews-section {
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../data/image/6.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/Bardeaux-en-tole.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -372,7 +372,7 @@ section {
 
 /* FAQ Section */
 .faq-section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #F0F5FA;
 }
 
@@ -460,13 +460,20 @@ section {
         max-width: 100%;
     }
 
-    .faq-title {
-        font-size: 2rem;
+    .our-services-section,
+    .achievements-section,
+    .faq-section,
+    .services-gallery {
+        padding: 40px 20px !important;
     }
 
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .achievements-title {
+        margin-top: 50px;
     }
 }
 
@@ -525,7 +532,7 @@ section {
 
 /* Achievements Section Styles (Copied from style.css) */
 .achievements-section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #ffffff;
 }
 
@@ -620,7 +627,7 @@ section {
 
 /* Intervention Section Styles (from style.css) */
 .intervention-section {
-    padding: 80px 20px;
+    padding: 40px 20px;
     background-color: #f7fafc;
     text-align: center;
 }

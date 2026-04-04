@@ -1,12 +1,11 @@
 /* ============================================
-   CITY PAGE STYLES - Design Unique et Special
+   CITY PAGE SHARED CORE STYLES
    ============================================ */
 
-/* City Hero Section */
 .city-hero {
     height: 75vh;
     min-height: 600px;
-    background: linear-gradient(rgba(10, 35, 66, 0.7), rgba(10, 35, 66, 0.7)), url('image/hero.jpg');
+    background: linear-gradient(rgba(10, 35, 66, 0.7), rgba(10, 35, 66, 0.7)), url('image/Renovation-toiture-1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -36,7 +35,7 @@
     max-width: 900px;
     z-index: 3;
     padding-bottom: 50px;
-    padding-top: 120px;
+    padding-top: 100px; /* Reduced from 120px */
 }
 
 .city-label {
@@ -113,281 +112,14 @@
     transform: translateY(-3px);
 }
 
-/* Local Intro Section */
-.city-intro-section {
-    padding: 40px 20px 80px;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-
-.city-intro-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.city-intro-text {
-    flex: 1;
-}
-
-.city-intro-text h2 {
-    font-size: 2.5rem;
-    color: #0A2342;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.city-intro-text h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 4px;
-    background: #FF6600;
-    border-radius: 2px;
-}
-
-.city-intro-text p {
-    font-size: 1.1rem;
-    color: #3E5066;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.city-benefits {
-    list-style: none;
-    padding: 0;
-    margin-top: 30px;
-}
-
-.city-benefits li {
-    font-size: 1.1rem;
-    color: #1C3552;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.city-benefits li i {
-    color: #FF6600;
-    font-size: 1.3rem;
-}
-
-.city-intro-image {
-    flex: 1;
-    position: relative;
-}
-
-.city-intro-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-}
-
-.image-badge {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    background: #0A2342;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    min-width: 140px;
-}
-
-.badge-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #FF6600;
-    line-height: 1;
-    margin-bottom: 5px;
-}
-
-.badge-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    opacity: 0.9;
-}
-
-/* Services Grid Specific */
-.city-services-section {
-    padding: 100px 20px;
-    background-color: #F8F9FA;
-}
-
-.city-services-header {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 60px;
-}
-
-.city-services-header h2 {
-    font-size: 2.8rem;
-    color: #0A2342;
-    margin-bottom: 15px;
-}
-
-.city-services-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.city-services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.city-service-card {
-    background: #ffffff;
-    padding: 35px 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-    transition: all 0.3s ease;
-    text-align: center;
-    border-bottom: 4px solid transparent;
-}
-
-.city-service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-    border-bottom-color: #FF6600;
-}
-
-.service-icon-box {
-    width: 70px;
-    height: 70px;
-    background: #FFF4EC;
-    border-radius: 50%;
-    margin: 0 auto 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    color: #FF6600;
-    transition: all 0.3s ease;
-}
-
-.city-service-card:hover .service-icon-box {
-    background: #FF6600;
-    color: #ffffff;
-    transform: rotateY(180deg);
-}
-
-.city-service-card h3 {
-    font-size: 1.4rem;
-    color: #0A2342;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.city-service-card p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Local Project Highlight */
-.local-project-section {
-    padding: 100px 20px;
-    background: #ffffff;
-}
-
-.local-project-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-}
-
-.local-project-content {
-    order: 2;
-}
-
-.project-tag {
-    display: inline-block;
-    background: #E8F1F8;
-    color: #0A2342;
-    padding: 6px 15px;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.local-project-content h2 {
-    font-size: 2.5rem;
-    color: #0A2342;
-    margin-bottom: 25px;
-}
-
-.project-desc {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    border-left: 4px solid #FF6600;
-    padding-left: 20px;
-}
-
-.project-stats {
-    display: flex;
-    gap: 40px;
-}
-
-.p-stat {
-    display: flex;
-    flex-direction: column;
-}
-
-.p-value {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #0A2342;
-}
-
-.p-label {
-    font-size: 0.9rem;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.local-project-image {
-    order: 1;
-    position: relative;
-}
-
-.local-project-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 20px 20px 0 #E8F1F8;
-    transition: all 0.5s ease;
-}
-
-.local-project-image:hover img {
-    transform: translate(-10px, -10px);
-    box-shadow: 30px 30px 0 #FF6600;
-}
-
 /* Call to Action Form */
 .city-cta-section {
     padding: 80px 20px;
     background: linear-gradient(135deg, #0A2342 0%, #163C66 100%);
     color: #ffffff;
     text-align: center;
+    border: none !important;
+    margin-bottom: 0 !important;
 }
 
 .city-cta-container {
@@ -461,164 +193,179 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer City Links */
-.footer-links-column {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* ============================================
+   NEW CLEAN TEXT LAYOUT
+   ============================================ */
+
+.city-main-content {
+    padding: 100px 20px;
+    background: #ffffff;
 }
 
-.footer-city-list {
-    list-style: none;
-    padding: 0;
+.city-content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.city-article-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.city-article-header h2 {
+    font-size: 3rem;
+    color: #0A2342;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.city-article-header .divider {
+    width: 80px;
+    height: 4px;
+    background: #FF6600;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.city-text-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 100px;
+    margin-bottom: 120px;
+    align-items: center;
+}
+
+.city-text-grid.reverse {
+    grid-template-columns: 1fr 1.4fr;
+}
+
+.city-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.city-text-block h3 {
+    font-size: 2.2rem;
+    color: #0A2342;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.city-text-block p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #4a5568;
     margin: 0;
 }
 
-.footer-city-list li {
-    margin-bottom: 8px;
+.city-deco-image-wrapper {
+    position: relative;
+    padding: 20px;
 }
 
-.footer-city-list a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    transition: color 0.3s;
+.city-deco-image-wrapper img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
 }
 
-.footer-city-list a:hover {
+.city-features-text {
+    background: #f8fafc;
+    padding: 80px 60px;
+    border-radius: 40px;
+    margin-top: 80px;
+}
+
+.city-features-text h3 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+}
+
+.features-list-clean {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item-clean {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.feature-item-clean i {
+    font-size: 1.8rem;
     color: #FF6600;
+    margin-top: 5px;
+    background: #FFF4EC;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-shrink: 0;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .city-services-grid {
-        grid-template-columns: repeat(2, 1fr);
+.feature-content h4 {
+    font-size: 1.4rem;
+    color: #0A2342;
+    margin-bottom: 12px;
+}
+
+.feature-content p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .city-hero-title {
+        font-size: 2.5rem;
     }
 
-    .local-project-container {
-        gap: 40px;
+    .city-text-grid,
+    .city-text-grid.reverse {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .city-deco-image-wrapper img {
+        height: 450px;
+    }
+
+    .features-list-clean {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .city-hero {
-        height: auto;
-        min-height: 100vh;
-        padding: 120px 20px 60px;
-    }
-
-    .city-hero-content {
-        padding-top: 0;
-        padding-bottom: 30px;
-    }
-
-    .city-hero-title {
+    .city-article-header h2 {
         font-size: 2.2rem;
     }
 
-    .city-hero-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .city-hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .city-cta-button {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .city-intro-section {
+    .city-main-content {
         padding: 60px 20px;
     }
 
-    .city-intro-container {
-        flex-direction: column;
-        gap: 40px;
+    .city-features-text {
+        padding: 40px 25px;
     }
 
-    .city-intro-text h2 {
-        font-size: 2rem;
+    .city-hero {
+        height: auto;
+        min-height: auto;
+        padding: 80px 20px 60px;
     }
 
-    .image-badge {
-        right: 10px;
-        bottom: -30px;
-        padding: 15px;
-        min-width: 120px;
-    }
-
-    .badge-number {
-        font-size: 2rem;
-    }
-
-    .city-services-section {
-        padding: 60px 20px;
-    }
-
-    .city-services-header h2 {
-        font-size: 2rem;
-    }
-
-    .city-services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .local-project-section {
-        padding: 60px 20px;
-    }
-
-    .local-project-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .local-project-content {
-        order: 1;
-    }
-
-    .local-project-content h2 {
-        font-size: 2rem;
-    }
-
-    .local-project-image {
-        order: 2;
-        margin-top: 20px;
-    }
-
-    .local-project-image img {
-        transform: none;
-        box-shadow: 10px 10px 0 #E8F1F8;
-        transition: all 0.8s ease;
-    }
-
-    .local-project-image.visible img {
-        transform: translate(-5px, -5px);
-        box-shadow: 10px 10px 0 #FF6600;
-    }
-
-    .local-project-image:hover img {
-        transform: translate(-5px, -5px);
-        box-shadow: 10px 10px 0 #FF6600;
-    }
-
-    .city-cta-section {
-        padding: 60px 20px;
-    }
-
-    .city-cta-container h2 {
-        font-size: 1.8rem;
-    }
-
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .city-contact-form {
-        padding: 25px;
-        gap: 15px;
+    .city-hero-content {
+        padding-top: 60px;
     }
 }

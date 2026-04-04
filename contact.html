@@ -7,39 +7,23 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
         name="viewport" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Contact - Nuances Deco</title>
+    <title>Contact - Artisan Toiture | Devis Gratuit Couvreur</title>
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="contact.css" rel="stylesheet" />
     <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
     <section class="contact-hero">
         <div class="contact-hero-content fade-in">
-            <h1 class="contact-hero-title" id="context_title_14">Contactez-nous</h1>
-            <p class="contact-hero-description" id="context_description_14">Vous avez un projet de peinture ou de
-                décoration ? N'hésitez pas à nous contacter pour un devis gratuit.</p>
+            <h1 class="contact-hero-title" id="text_hero_title">Contactez votre Couvreur</h1>
+            <p class="contact-hero-description" id="text_hero_desc">Vous avez un projet de toiture, charpente ou
+                zinguerie ? N'hésitez pas à nous contacter pour un devis gratuit et personnalisé.</p>
         </div>
     </section>
     <section class="contact-content-section">
@@ -69,7 +53,10 @@
                 </form>
             </div>
             <div class="contact-image-wrapper slide-in-right">
-                <img alt="Contact Nuances Deco" data-idx="1" id="image_14" src="image/image_14_1.jpg" />
+                <img alt="Contact Artisan Toiture" data-idx="1" id="image_1" src="image/materiaux-renovation-toiture.jpg" />
+                <div style="display:none" id="context_title_1">Contact Couvreur et Devis</div>
+                <div style="display:none" id="context_description_1">Illustration de prise de contact pour travaux de
+                    toiture et rénovation de charpente</div>
             </div>
         </div>
     </section>
@@ -77,9 +64,10 @@
         <div class="location-container">
             <div class="location-top slide-in-left">
                 <div class="location-info">
-                    <h2 class="location-title">Notre emplacement</h2>
-                    <p class="location-description">Nous sommes situés au cœur de la ville, offrant des services de
-                        peinture et décoration intérieure pour particuliers et professionnels.</p>
+                    <h2 class="location-title">Notre Secteur</h2>
+                    <p class="location-description">Nous intervenons partout en ville et dans les environs pour tous vos
+                        besoins de
+                        charpente, couverture et étanchéité de toiture.</p>
                 </div>
                 <div class="info-blocks">
                     <div class="info-block">
@@ -99,47 +87,71 @@
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="footer" id="footer-background">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <h3 class="footer-title">Contact</h3>
-                    <p class="footer-subtitle">Pour toute demande de renseignement.</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h4 class="contact-label">Adresse</h4>
-                            <p class="contact-text">Revigny sur Ornain</p>
-                        </div>
-                        <div class="contact-item">
-                            <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com" id="email_address"
-                                    style="color: inherit; text-decoration: none;">contact@nuancesdeco.com</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:06 58 74 07 47" id="phone_number"
-                                    style="color: inherit; text-decoration: none;">06 58 74 07 47</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-form">
-                    <form class="footer-form-content">
-                        <div class="footer-form-group">
-                            <label class="footer-form-label" for="footer-name">Nom et prénom</label>
-                            <input class="footer-form-input" id="footer-name" name="fullname"
-                                placeholder="Entrez votre nom complet" required="" type="text" />
-                        </div>
-                        <button class="footer-submit-button" type="submit" id="footer-button">Envoyer votre
-                            demande</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">© 2025. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Mobile Sticky Buttons -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:0658740747" class="sticky-btn call-btn">
+            <i class="fas fa-phone-alt"></i> Appeler
+        </a>
+        <a href="contact.html" class="sticky-btn quote-btn">
+            <i class="fas fa-file-invoice"></i> Devis Gratuit
+        </a>
+    </div>
+
+    <style>
+        .mobile-sticky-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #f2f2f2;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 99999;
+            padding: 10px;
+            justify-content: space-between;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+
+        .sticky-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .call-btn {
+            background-color: #f8f9fa;
+            color: #0A2342;
+            border: 1px solid #e9ecef;
+        }
+
+        .quote-btn {
+            background-color: #FF6600;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-sticky-bar {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+        }
+    </style>
     <script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>// Configuration de l'adresse et des coordonnées
@@ -160,70 +172,32 @@
         var marker = L.marker([MAP_LATITUDE, MAP_LONGITUDE]).addTo(map);
         marker.bindPopup('<b>Notre adresse</b><br>' + MAP_ADDRESS).openPopup();</script>
 
+    <script src="components.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-
-            navToggle.addEventListener('click', function () {
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
-
-            // Close menu when clicking on a link
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
-                });
-            });
-
-            // Highlight active navigation link
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-            navLinks.forEach(link => {
-                const linkPage = link.getAttribute('href');
-                if (linkPage === currentPage) {
-                    link.classList.add('active');
-                }
-            });
-
-            // Navbar scroll animation
-            const navbar = document.querySelector('.navbar');
-            let lastScrollTop = 0;
-
-            window.addEventListener('scroll', function () {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (scrollTop > lastScrollTop && scrollTop > 100) {
-                    // Scrolling down
-                    navbar.classList.add('hidden');
-                } else {
-                    // Scrolling up
-                    navbar.classList.remove('hidden');
-                }
-
-                lastScrollTop = scrollTop;
-            });
-
-            // Scroll animations
+            // Robust Scroll Animations
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function (entries) {
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Observe all animated elements
             const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
             animatedElements.forEach(el => {
                 observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
             });
         });
 

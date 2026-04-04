@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="robots" content="index, follow" />
-    <title>Peintre Décorateur à Châlons-en-Champagne | Rénovation</title>
+    <title>Peintre Décorateur à Châlons-en-Champagne | Peinture & Décoration</title>
     <meta name="description"
-        content="Artisan peintre intervenant à Châlons-en-Champagne. Peinture intérieure, extérieure, sols et revêtements muraux. Devis gratuit et déplacement inclus." />
+        content="Artisan peintre intervenant à Châlons-en-Champagne. Peinture intérieure, extérieure et revêtements muraux. Devis gratuit et déplacement inclus." />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -19,8 +19,20 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a class="logo-link" href="index.html">Wilmart</a>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
+                </div>
+                <div class="nav-badges">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -45,7 +57,18 @@
                         <li><a href="peintre-commercy.html">Commercy</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <div class="nav-badges-mobile">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="cert-badge google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Certifié</span>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
@@ -54,95 +77,101 @@
     <header class="city-hero">
         <div class="city-hero-content fade-in">
             <div class="city-label"><i class="fas fa-map-marker-alt"></i> Châlons-en-Champagne</div>
-            <h1 class="city-hero-title">Votre Expert Peinture à Châlons-en-Champagne</h1>
-            <p class="city-hero-subtitle">Embellissez votre maison ou appartement avec nos prestations de peinture haut
+            <h1 class="city-hero-title" id="text_hero_title">Votre Expert Peinture à Châlons-en-Champagne</h1>
+            <p class="city-hero-subtitle" id="text_hero_desc">Embellissez votre maison ou appartement avec nos
+                prestations de peinture haut
                 de gamme</p>
             <div class="city-hero-buttons">
                 <a href="#contact-section" class="city-cta-button primary">Demander un Devis Gratuit</a>
-                <a href="tel:0658740747" class="city-cta-button secondary"><i class="fas fa-phone"></i> 06 58 74 07
+                <a href="tel:0658740747" class="city-cta-button secondary" id="hero-contact-button"><i
+                        class="fas fa-phone"></i> 06 58 74 07
                     47</a>
             </div>
         </div>
     </header>
 
 
-    <!-- Local Project Highlight 1 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Chantier Local</span>
-                <h2>Appartement Rue de la Marne</h2>
-                <p class="project-desc">Rénovation complète des peintures d'un grand appartement familial. Travail de
-                    préparation minutieux incluant l'impression et deux couches de finition mate. Les portes et plinthes
-                    ont été laquées en blanc pour un contraste élégant.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">12</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">95m²</span>
-                        <span class="p-label">Surface peinte</span>
-                    </div>
-                </div>
-            </div>
-            <div class="local-project-image fade-in">
-                <img src="image/image_4_1.jpg" alt="Chantier Châlons-en-Champagne">
-            </div>
-        </div>
-    </section>
+    <!-- Main Content Section -->
+    <main class="city-main-content">
+        <div class="city-content-container">
+            <header class="city-article-header fade-in">
+                <h2 id="context_title_main">Expertise en Peinture & Décoration à Châlons-en-Champagne</h2>
+                <div class="divider"></div>
+            </header>
 
-    <!-- Local Project Highlight 2 -->
-    <section class="local-project-section alt-layout" style="background-color: #f8f9fa;">
-        <div class="local-project-container">
-            <div class="local-project-image fade-in">
-                <img src="image/image_5_1.jpg" alt="Rénovation sol Châlons">
-            </div>
-            <div class="local-project-content">
-                <span class="project-tag">Pose de Sol</span>
-                <h2>Remplacement de Revêtement de Sol</h2>
-                <p class="project-desc">Dépose d'une ancienne moquette usagée dans trois chambres et pose d'un sol
-                    stratifié aspect chêne naturel avec sous-couche acoustique haute performance. Finition avec plinthes
-                    assorties.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">4</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">40m²</span>
-                        <span class="p-label">Surface posée</span>
-                    </div>
+            <div class="city-text-grid">
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_2">Sublimez votre Habitat Champenois</h3>
+                    <p id="context_description_2">Notre entreprise de peinture met son savoir-faire au service des
+                        particuliers et des copropriétés de Châlons-en-Champagne. De la rénovation complète
+                        d'appartements familiaux Rue de la Marne au rafraîchissement de résidences modernes, nous
+                        assurons des prestations de haute qualité. Nous réalisons une préparation méticuleuse de vos
+                        supports pour garantir une finition parfaite, que vous choisissiez un rendu mat, velours ou
+                        satiné.</p>
+                    <p>Chaque projet commence par une écoute attentive de vos besoins. Nous vous conseillons sur les
+                        harmonies colorées et les textures pour créer une ambiance qui vous ressemble. L'application de
+                        peintures professionnelles haut de gamme assure une excellente tenue des couleurs et une
+                        durabilité exceptionnelle dans le temps.</p>
+                </div>
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/fuite-de-toit-03012019-1153.jpg" alt="Rénovation appartement Châlons-en-Champagne"
+                        id="image_2">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Local Project Highlight 3 -->
-    <section class="local-project-section">
-        <div class="local-project-container">
-            <div class="local-project-content">
-                <span class="project-tag">Copropriété</span>
-                <h2>Rénovation Hall d'Immeuble</h2>
-                <p class="project-desc">Rafraîchissement des parties communes d'une résidence. Utilisation d'une
-                    peinture acrylique velours très résistante aux chocs et lessivable. Mise en peinture des boîtes aux
-                    lettres pour une finition soignée.</p>
-                <div class="project-stats">
-                    <div class="p-stat">
-                        <span class="p-value">5</span>
-                        <span class="p-label">Jours de travail</span>
-                    </div>
-                    <div class="p-stat">
-                        <span class="p-value">4</span>
-                        <span class="p-label">Étages traités</span>
-                    </div>
+            <div class="city-text-grid reverse">
+                <div class="city-deco-image-wrapper scale-in">
+                    <img src="image/Fotolia_58530498_S.jpg" alt="Décoration intérieure Châlons" id="image_3">
+                </div>
+                <div class="city-text-block fade-in">
+                    <h3 id="context_title_3">Rénovation de Parties Communes & Espaces Dédiés</h3>
+                    <p id="context_description_3">Notre expertise s'étend également à la rénovation des halls
+                        d'immeubles et des cages d'escaliers à Châlons-en-Champagne. Nous utilisons des peintures
+                        acryliques velours extrêmement résistantes aux chocs et lessivables, idéales pour les zones de
+                        fort passage. Pour vos intérieurs privés, nous créons des espaces apaisants dans vos chambres ou
+                        des ambiances dynamiques dans vos pièces de vie.</p>
+                    <p>Nous nous engageons à livrer un chantier exemplaire. Protection rigoureuse des sols, respect
+                        absolu des délais et nettoyage complet en fin d'intervention sont les piliers de notre charte
+                        qualité. Faire confiance à notre équipe, c'est choisir la sérénité pour tous vos travaux de
+                        décoration murale et de remise en peinture.</p>
                 </div>
             </div>
-            <div class="local-project-image fade-in">
-                <img src="image/gallery_9.jpg" alt="Hall immeuble Châlons">
+
+            <div class="city-features-text fade-in">
+                <h3>Nos Atouts à Châlons-en-Champagne</h3>
+                <ul class="features-list-clean">
+                    <li class="feature-item-clean">
+                        <i class="fas fa-brush"></i>
+                        <div class="feature-content">
+                            <h4>Maîtrise Technique</h4>
+                            <p>Une application soignée et des finitions de précision pour un rendu haut de gamme.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-palette"></i>
+                        <div class="feature-content">
+                            <h4>Conseils Personnalisés</h4>
+                            <p>Une aide au choix des teintes et des matières pour valoriser chaque volume.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="feature-content">
+                            <h4>Sécurité Totale</h4>
+                            <p>Garantie décennale et utilisation de peintures éco-responsables (A+).</p>
+                        </div>
+                    </li>
+                    <li class="feature-item-clean">
+                        <i class="fas fa-broom"></i>
+                        <div class="feature-content">
+                            <h4>Propreté de Chantier</h4>
+                            <p>Nous laissons votre espace de vie impeccable après notre passage.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Call to Action -->
     <section class="city-cta-section" id="contact-section">
@@ -171,12 +200,13 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <h4 class="contact-label">Email</h4>
-                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com">contact@nuancesdeco.com</a>
+                            <p class="contact-text"><a href="mailto:contact@nuancesdeco.com"
+                                    id="email_address">contact@nuancesdeco.com</a>
                             </p>
                         </div>
                         <div class="contact-item">
                             <h4 class="contact-label">Téléphone</h4>
-                            <p class="contact-text"><a href="tel:0658740747">06 58 74 07 47</a></p>
+                            <p class="contact-text"><a href="tel:0658740747" id="phone_number">06 58 74 07 47</a></p>
                         </div>
                     </div>
                 </div>
@@ -202,11 +232,13 @@
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
 
-            navToggle.addEventListener('click', function (e) {
-                e.stopPropagation();
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+            }
 
             // Mobile Dropdown Toggle
             const dropdowns = document.querySelectorAll('.dropdown');
@@ -226,23 +258,37 @@
             });
 
             // Close menu when clicking outside
-            document.body.addEventListener('click', function (e) {
-                if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+            document.addEventListener('click', function (e) {
+                if (navMenu && navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                     navMenu.classList.remove('active');
                     navToggle.classList.remove('active');
                 }
             });
 
-            // Scroll animations
+            // Robust Scroll Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.1 });
+            }, observerOptions);
 
-            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => observer.observe(el));
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
         });
     </script>
 </body>
