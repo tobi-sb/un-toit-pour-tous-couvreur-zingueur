@@ -1,6 +1,6 @@
 .footer {
-    background-color: #051126;
-    color: #ffffff;
+    background-color: var(--theme-footer-bg);
+    color: var(--theme-footer-text);
     padding: 100px 20px 50px;
     width: 100%;
     max-width: 100%;
@@ -35,12 +35,12 @@
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--theme-footer-text);
 }
 
 .footer-subtitle {
     font-size: 1rem;
-    color: #B8C5D6;
+    color: var(--theme-text-light);
     margin-bottom: 2rem;
 }
 
@@ -52,11 +52,11 @@
 }
 
 .footer-badges .cert-badge {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
+    color: var(--theme-footer-text);
+    background: var(--theme-border-light);
     padding: 10px 15px;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--theme-border-light);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -66,11 +66,11 @@
 
 .footer-badges .cert-badge i {
     font-size: 1.1rem;
-    color: #FF6600;
+    color: var(--theme-primary);
 }
 
 .footer-badges .cert-badge.google i {
-    color: #4285F4;
+    color: var(--theme-google-blue);
 }
 
 .contact-info {
@@ -88,13 +88,13 @@
 .contact-label {
     font-size: 1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--theme-footer-text);
     margin: 0;
 }
 
 .contact-text {
     font-size: 1rem;
-    color: #B8C5D6;
+    color: var(--theme-text-light);
     margin: 0;
 }
 
@@ -135,20 +135,20 @@
     width: 100%;
     padding: 15px 20px;
     font-size: 1rem;
-    color: #0A2342;
-    background-color: #ffffff;
+    color: var(--theme-secondary);
+    background-color: var(--theme-white);
     border: none;
     border-radius: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-form-input::placeholder {
-    color: #8FA1B8;
+    color: var(--theme-text-light);
 }
 
 .footer-submit-button {
-    background-color: #ffffff;
-    color: #FF6600;
+    background-color: var(--theme-white);
+    color: var(--theme-primary);
     font-size: 1.1rem;
     font-weight: 600;
     padding: 15px 40px;
@@ -159,9 +159,9 @@
 }
 
 .footer-submit-button:hover {
-    background-color: #E2EAF1;
+    background-color: var(--theme-bg-light);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px var(--theme-shadow-dark);
 }
 
 .footer-submit-button:active {
@@ -169,14 +169,14 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid #1C3552;
+    border-top: 1px solid var(--theme-secondary-hover);
     padding-top: 30px;
     text-align: center;
 }
 
 .copyright {
     font-size: 0.9rem;
-    color: #ffffff;
+    color: var(--theme-white);
     margin: 0;
 }
 

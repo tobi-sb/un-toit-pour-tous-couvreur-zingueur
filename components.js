@@ -1,5 +1,13 @@
 // Script pour charger les composants réutilisables (navbar et footer) 
-// et initialiser les services globaux (EmailJS)
+// et initialiser les services globaux (EmailJS, Dynamic Colors)
+
+// Injecter color.js dynamiquement s'il n'est pas déjà présent
+if (!document.querySelector('script[src*="color.js"]')) {
+    const colorScript = document.createElement('script');
+    colorScript.src = 'color.js';
+    document.head.prepend(colorScript);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Charger la navbar
     const navbarPlaceholder = document.getElementById('navbar-placeholder');

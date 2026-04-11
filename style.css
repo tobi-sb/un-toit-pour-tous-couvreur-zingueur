@@ -126,7 +126,7 @@ img {
     width: 100vw;
     max-width: 100vw;
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('image/Renovation-toiture-1.jpg');
+    background-image: linear-gradient(var(--theme-overlay), var(--theme-overlay)), url('image/Renovation-toiture-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--theme-border-light);
     z-index: 1;
 }
 
@@ -156,7 +156,7 @@ img {
 
 .hero-content {
     text-align: center;
-    color: #ffffff;
+    color: var(--theme-white);
     max-width: 800px;
     padding: 0 20px;
 }
@@ -177,12 +177,12 @@ img {
 }
 
 .hero-button {
-    background-color: #FF6600;
-    color: #ffffff;
+    background-color: var(--theme-primary);
+    color: var(--theme-white);
     font-size: 0.8rem;
     font-weight: 600;
     padding: 15px 40px;
-    border: 2px solid #FF6600;
+    border: 2px solid var(--theme-primary);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -193,11 +193,11 @@ img {
 }
 
 .hero-button:hover {
-    background-color: #e65c00;
-    border-color: #e65c00;
-    color: #ffffff;
+    background-color: var(--theme-primary-hover);
+    border-color: var(--theme-primary-hover);
+    color: var(--theme-white);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px var(--theme-shadow-dark);
     text-decoration: none;
 }
 
@@ -208,7 +208,7 @@ img {
 /* About Section */
 .about-section {
     padding: 100px 20px;
-    background-color: #F0F5FA;
+    background-color: var(--theme-bg-light);
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -235,14 +235,14 @@ img {
 .about-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #0A2342;
+    color: var(--theme-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.3;
 }
 
 .about-description {
     font-size: 1.1rem;
-    color: #3E5066;
+    color: var(--theme-text-muted);
     line-height: 1.8;
     margin-bottom: 2.5rem;
 }
@@ -271,8 +271,8 @@ img {
 }
 
 .contact-button {
-    background-color: #FF6600;
-    color: #ffffff;
+    background-color: var(--theme-primary);
+    color: var(--theme-white);
     font-size: 1.1rem;
     font-weight: 600;
     padding: 15px 40px;
@@ -285,9 +285,9 @@ img {
 }
 
 .contact-button:hover {
-    background-color: #e65c00;
+    background-color: var(--theme-primary-hover);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px var(--theme-shadow);
     text-decoration: none;
 }
 
@@ -315,7 +315,7 @@ img {
 /* Services Section */
 .services-section {
     padding: 100px 20px;
-    background-color: #ffffff;
+    background-color: var(--theme-white);
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
@@ -368,7 +368,7 @@ img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px var(--theme-shadow-dark);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
     box-sizing: border-box;
@@ -440,11 +440,11 @@ img {
 
 .form-input:focus {
     outline: none;
-    border-color: #0A2342;
+    border-color: var(--theme-secondary);
 }
 
 .form-input::placeholder {
-    color: #8FA1B8;
+    color: var(--theme-text-light);
 }
 
 .submit-button {

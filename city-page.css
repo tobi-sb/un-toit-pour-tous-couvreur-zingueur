@@ -5,7 +5,7 @@
 .city-hero {
     height: 75vh;
     min-height: 600px;
-    background: linear-gradient(rgba(10, 35, 66, 0.7), rgba(10, 35, 66, 0.7)), url('image/Renovation-toiture-1.jpg');
+    background: linear-gradient(var(--theme-overlay-dark), var(--theme-overlay-dark)), url('image/Renovation-toiture-1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
+    color: var(--theme-white);
     padding: 0 20px;
     position: relative;
     overflow: hidden;
@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: #ffffff;
+    background: var(--theme-white);
     clip-path: ellipse(55% 60% at 50% 100%);
     z-index: 2;
 }
@@ -40,9 +40,9 @@
 
 .city-label {
     display: inline-block;
-    background: rgba(255, 102, 0, 0.2);
-    border: 1px solid #FF6600;
-    color: #FF6600;
+    background: var(--theme-bg-light);
+    border: 1px solid var(--theme-primary);
+    color: var(--theme-primary);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
@@ -58,7 +58,7 @@
     font-weight: 800;
     margin-bottom: 15px;
     line-height: 1.2;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 10px var(--theme-shadow-dark);
 }
 
 .city-hero-subtitle {
@@ -89,9 +89,9 @@
 }
 
 .city-cta-button.primary {
-    background: #FF6600;
-    color: #ffffff;
-    box-shadow: 0 10px 25px rgba(255, 102, 0, 0.3);
+    background: var(--theme-primary);
+    color: var(--theme-white);
+    box-shadow: 0 10px 25px var(--theme-shadow-dark);
 }
 
 .city-cta-button.primary:hover {
@@ -102,21 +102,21 @@
 
 .city-cta-button.secondary {
     background: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid var(--theme-white);
+    color: var(--theme-white);
 }
 
 .city-cta-button.secondary:hover {
-    background: #ffffff;
-    color: #0A2342;
+    background: var(--theme-white);
+    color: var(--theme-secondary);
     transform: translateY(-3px);
 }
 
 /* Call to Action Form */
 .city-cta-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #0A2342 0%, #163C66 100%);
-    color: #ffffff;
+    background: var(--theme-secondary);
+    color: var(--theme-white);
     text-align: center;
     border: none !important;
     margin-bottom: 0 !important;
@@ -139,10 +139,10 @@
 }
 
 .city-contact-form {
-    background: #ffffff;
+    background: var(--theme-white);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 60px var(--theme-shadow-dark);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -156,7 +156,7 @@
 .city-contact-form input,
 .city-contact-form textarea {
     padding: 15px 20px;
-    border: 2px solid #E2EAF1;
+    border: 2px solid var(--theme-border);
     border-radius: 10px;
     font-family: inherit;
     font-size: 1rem;
@@ -166,7 +166,7 @@
 
 .city-contact-form input:focus,
 .city-contact-form textarea:focus {
-    border-color: #FF6600;
+    border-color: var(--theme-primary);
 }
 
 .form-row input {
@@ -255,7 +255,7 @@
 .city-text-block p {
     font-size: 1.15rem;
     line-height: 1.9;
-    color: #4a5568;
+    color: var(--theme-text-muted);
     margin: 0;
 }
 
@@ -320,7 +320,7 @@
 }
 
 .feature-content p {
-    color: #64748b;
+    color: var(--theme-text-light);
     line-height: 1.7;
     font-size: 1.05rem;
 }

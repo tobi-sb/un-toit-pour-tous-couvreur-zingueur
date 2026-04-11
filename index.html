@@ -236,7 +236,7 @@
         /* CSS for Estimation Section */
         .estimation-section {
             padding: 100px 20px;
-            background: linear-gradient(135deg, #f9f9f9 0%, #eef2f5 100%);
+            background: var(--theme-bg-gradient);
         }
 
         .estimation-container {
@@ -247,22 +247,22 @@
 
         .estimation-title {
             font-size: 2.5rem;
-            color: #0A2342;
+            color: var(--theme-secondary);
             margin-bottom: 10px;
             font-weight: 700;
         }
 
         .estimation-subtitle {
             font-size: 1.1rem;
-            color: #3E5066;
+            color: var(--theme-text-muted);
             margin-bottom: 40px;
         }
 
         .estimation-box {
-            background: #fff;
+            background: var(--theme-bg-white);
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px var(--theme-shadow);
             position: relative;
             min-height: 400px;
         }
@@ -278,8 +278,8 @@
         .est-step {
             width: 35px;
             height: 35px;
-            background: #e0e0e0;
-            color: #fff;
+            background: var(--theme-border);
+            color: var(--theme-white);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -289,13 +289,13 @@
         }
 
         .est-step.active {
-            background: #FF6600;
+            background: var(--theme-primary);
         }
 
         .est-line {
             width: 50px;
             height: 3px;
-            background: #e0e0e0;
+            background: var(--theme-border);
             margin: 0 10px;
         }
 
@@ -311,7 +311,7 @@
 
         .est-content h3 {
             font-size: 1.5rem;
-            color: #0A2342;
+            color: var(--theme-secondary);
             margin-bottom: 30px;
         }
 
@@ -323,7 +323,7 @@
         }
 
         .est-option {
-            border: 2px solid #eee;
+            border: 2px solid var(--theme-border-light);
             border-radius: 15px;
             padding: 30px 10px;
             cursor: pointer;
@@ -332,14 +332,14 @@
 
         .est-option:hover,
         .est-option.selected {
-            border-color: #FF6600;
-            background: #fff5f0;
+            border-color: var(--theme-primary);
+            background: var(--theme-bg-blue-light);
             transform: translateY(-5px);
         }
 
         .est-option i {
             font-size: 2.5rem;
-            color: #0A2342;
+            color: var(--theme-secondary);
             margin-bottom: 15px;
             display: block;
         }
@@ -365,7 +365,7 @@
         .est-form-group input {
             width: 100%;
             padding: 15px;
-            border: 1px solid #ddd;
+            border: 1px solid var(--theme-border);
             border-radius: 8px;
             font-size: 1.1rem;
             box-sizing: border-box;
@@ -379,7 +379,7 @@
         .est-state {
             flex: 1;
             padding: 15px;
-            border: 2px solid #eee;
+            border: 2px solid var(--theme-border-light);
             border-radius: 8px;
             text-align: center;
             cursor: pointer;
@@ -389,9 +389,9 @@
 
         .est-state:hover,
         .est-state.selected {
-            border-color: #FF6600;
-            background: #fff5f0;
-            color: #FF6600;
+            border-color: var(--theme-primary);
+            background: var(--theme-bg-blue-light);
+            color: var(--theme-primary);
         }
 
         /* Buttons */
@@ -433,7 +433,7 @@
         .est-result-price {
             font-size: 3rem;
             font-weight: 800;
-            color: #FF6600;
+            color: var(--theme-primary);
             margin: 20px 0;
         }
 
@@ -469,19 +469,19 @@
         /* Comparison Section Styles */
         .comparison-section {
             padding: 100px 20px;
-            background-color: #f8fbff;
+            background-color: var(--theme-bg-blue-light);
         }
 
         .comparison-title {
             font-size: 2.5rem;
-            color: #0A2342;
+            color: var(--theme-secondary);
             margin-bottom: 15px;
             font-weight: 700;
             text-align: center;
         }
 
         .comparison-subtitle {
-            color: #3E5066;
+            color: var(--theme-text-muted);
             font-size: 1.1rem;
             max-width: 700px;
             margin: 0 auto 10px;
@@ -489,7 +489,7 @@
         }
 
         .comparison-disclaimer {
-            color: #FF6600;
+            color: var(--theme-primary);
             font-size: 0.9rem;
             max-width: 700px;
             margin: 0 auto 40px;
@@ -506,10 +506,10 @@
         }
 
         .comparison-card {
-            background: #fff;
+            background: var(--theme-white);
             padding: 12px;
             border-radius: 24px;
-            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 15px 45px var(--theme-shadow);
             transition: transform 0.3s ease;
         }
 
@@ -568,7 +568,7 @@
             left: 50%;
             width: 3px;
             height: 100%;
-            background: rgba(255, 255, 255, 0.8);
+            background: var(--theme-white);
             z-index: 5;
             transform: translateX(-50%);
             pointer-events: none;
@@ -581,15 +581,15 @@
             transform: translate(-50%, -50%);
             width: 36px;
             height: 36px;
-            background: #FF6600;
-            border: 3px solid white;
+            background: var(--theme-primary);
+            border: 3px solid var(--theme-white);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: var(--theme-white);
             font-size: 0.9rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px var(--theme-shadow-dark);
             max-width: none !important;
             flex-shrink: 0;
         }
@@ -597,7 +597,7 @@
         .comparison-label {
             margin-top: 20px;
             font-weight: 700;
-            color: #0A2342;
+            color: var(--theme-secondary);
             font-size: 1.2rem;
             text-align: center;
         }

@@ -117,14 +117,15 @@ function showToast(message, type = 'success') {
 
     // Create the toast element
     const toast = document.createElement('div');
-    const accentColor = type === 'success' ? '#FF6600' : '#d9534f'; // Theme orange or red
+    const colors = window.THEME_COLORS || { primary: '#FF6600', error: '#d9534f', secondary: '#0A2342', white: '#ffffff', overlay: 'rgba(0,0,0,0.2)' };
+    const accentColor = type === 'success' ? colors.success : colors.error;
     
     toast.style.cssText = `
-        background-color: #0A2342;
-        color: white;
+        background-color: ${colors.secondary};
+        color: ${colors.white};
         padding: 15px 25px;
         border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 30px ${colors.overlay};
         display: flex;
         align-items: center;
         gap: 12px;
