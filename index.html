@@ -7,7 +7,8 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
         name="viewport" />
     <meta name="robots" content="index, follow" />
-    <title>Artisan Couvreur - Toiture, Charpente et Zinguerie | Votre Expert Local</title>
+    <title id="page-seo-title">Artisan Couvreur - Toiture, Charpente et Zinguerie | Votre Expert Local</title>
+    <meta name="description" content="Expert en couverture et zinguerie pour une toiture durable." id="page-seo-desc">
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -22,10 +23,10 @@
     <div id="navbar-placeholder"></div>
     <section class="hero" id="hero-section">
         <div class="hero-content fade-in">
-            <h1 class="hero-title" id="text_hero_title">Expert en Toiture, Charpente et Étanchéité</h1>
+            <h1 class="hero-title" id="company-name-main">Expert en Toiture, Charpente et Étanchéité</h1>
             <p class="hero-description" id="text_hero_desc">Couvreur professionnel qualifié : Rénovation de toiture,
                 travaux de zinguerie et protection durable de votre habitat.</p>
-            <a class="hero-button" href="tel:06 58 74 07 47" id="hero-contact-button"
+            <a class="hero-button" href="tel:06 58 74 07 47" id="company-phone"
                 style="text-decoration: none; display: inline-block;">Devis Gratuit</a>
         </div>
     </section>
@@ -51,7 +52,7 @@
                         <div class="stat-label">Toitures rénovées</div>
                     </div>
                 </div>
-                <a class="contact-button" href="tel:06 58 74 07 47" id="contact-button"
+                <a class="contact-button" href="tel:06 58 74 07 47" id="company-phone"
                     style="text-decoration: none; display: inline-block;">Contactez-nous</a>
             </div>
             <div class="about-image slide-in-right" style="max-width: 100%; overflow-x: hidden;">
@@ -959,9 +960,7 @@
             </form>
         </div>
     </section>
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
-    <script src="components.js"></script>
+
     <script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>// Configuration de l'adresse et des coordonnées
@@ -983,7 +982,7 @@
         marker.bindPopup('<b>Notre adresse</b><br>' + MAP_ADDRESS).openPopup();
     </script>
 
-    <script src="components.js"></script>
+
 
     <script>
         // Robust Scroll Animations
@@ -1135,7 +1134,7 @@
     </script>
     <!-- Mobile Sticky Buttons -->
     <div class="mobile-sticky-bar">
-        <a href="tel:0658740747" class="sticky-btn call-btn">
+        <a href="tel:0658740747" class="sticky-btn call-btn" id="company-phone">
             <i class="fas fa-phone-alt"></i> Appeler
         </a>
         <a href="contact.html" class="sticky-btn quote-btn">
@@ -1196,6 +1195,11 @@
             }
         }
     </style>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="components.js"></script>
 </body>
 
 </html>

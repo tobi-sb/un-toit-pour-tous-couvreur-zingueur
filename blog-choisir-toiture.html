@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
         name="viewport" />
     <meta name="robots" content="index, follow" />
-    <title>Comment choisir le bon type de tuiles pour sa toiture ? | Blog Expert Toiture</title>
+    <title id="page-seo-title">Comment choisir le bon type de tuiles pour sa toiture ? | Blog Expert Toiture</title>
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -16,61 +16,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <div class="nav-logo">
-                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
-                </div>
-                <div class="nav-badges">
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-halved"></i>
-                        <span>Garantie Décennale</span>
-                    </div>
-                    <div class="cert-badge google">
-                        <i class="fab fa-google"></i>
-                        <span>Google Certifié</span>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
-                <li class="nav-item dropdown">
-                    <span class="nav-link dropdown-toggle">Zones d'intervention <i
-                            class="fas fa-chevron-down"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="couvreur-revigny-sur-ornain.html">Revigny sur Ornain</a></li>
-                        <li><a href="couvreur-bar-le-duc.html">Bar-le-Duc</a></li>
-                        <li><a href="couvreur-vitry-le-francois.html">Vitry-le-François</a></li>
-                        <li><a href="couvreur-saint-dizier.html">Saint-Dizier</a></li>
-                        <li><a href="couvreur-falons-en-champagne.html">Châlons-en-Champagne</a></li>
-                        <li><a href="couvreur-verdun.html">Verdun</a></li>
-                        <li><a href="couvreur-ligny-en-barrois.html">Ligny-en-Barrois</a></li>
-                        <li><a href="couvreur-commercy.html">Commercy</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <div class="nav-badges-mobile">
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-halved"></i>
-                        <span>Garantie Décennale</span>
-                    </div>
-                    <div class="cert-badge google">
-                        <i class="fab fa-google"></i>
-                        <span>Google Certifié</span>
-                    </div>
-                </div>
-            </ul>
-        </div>
-    </nav>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <main class="article-container">
         <a href="blog.html" class="back-to-blog"><i class="fas fa-arrow-left"></i> Retour au blog</a>
@@ -158,39 +105,8 @@
     <div id="footer-placeholder"></div>
     <script src="components.js"></script>
     <script>
-        // Mobile Navigation Toggle
+        // Scroll Animations
         document.addEventListener('DOMContentLoaded', function () {
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-
-            if (navToggle && navMenu) {
-                function closeMenu() {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
-                }
-
-                function openMenu() {
-                    navMenu.classList.add('active');
-                    navToggle.classList.add('active');
-                }
-
-                navToggle.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    if (navMenu.classList.contains('active')) {
-                        closeMenu();
-                    } else {
-                        openMenu();
-                    }
-                });
-
-                // Close menu when clicking outside
-                document.addEventListener('click', function (e) {
-                    if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-                        closeMenu();
-                    }
-                });
-            }
-
             // Robust Scroll Animations
             const observerOptions = {
                 threshold: 0.1,

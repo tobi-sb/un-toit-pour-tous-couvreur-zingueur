@@ -6,11 +6,11 @@
 
 const THEME_COLORS = {
     // Brand Colors
-    primary: '#FF6600',
+    primary: '#2634b1ff',
     primaryHover: '#e65c00',
     secondary: '#0A2342', // Deep Blue
     secondaryHover: '#1C3552',
-    
+
     // Grayscale & Text
     white: '#ffffff',
     black: '#000000',
@@ -19,7 +19,7 @@ const THEME_COLORS = {
     textLight: '#B8C5D6',
     textLighter: '#CEDBE8',
     textDark: '#05162B',
-    
+
     // Backgrounds
     bgLight: '#F0F5FA',
     bgWhite: '#ffffff',
@@ -28,7 +28,7 @@ const THEME_COLORS = {
     bgDarker: '#051126', // Footer Dark
     bgGradient: 'linear-gradient(135deg, #f9f9f9 0%, #eef2f5 100%)',
     bgBlueLight: '#f8fbff',
-    
+
     // UI Elements
     border: '#CEDBE8',
     borderLight: 'rgba(255, 255, 255, 0.1)',
@@ -36,13 +36,13 @@ const THEME_COLORS = {
     shadowDark: 'rgba(0, 0, 0, 0.15)',
     overlay: 'rgba(0, 0, 0, 0.2)',
     overlayDark: 'rgba(0, 0, 0, 0.6)',
-    
+
     // Feedback
     success: '#4BB543',
     error: '#d9534f',
     star: '#FF6600',
     googleBlue: '#4285F4',
-    
+
     // Specific Components
     navBg: '#ffffff',
     navText: '#0A2342',
@@ -55,13 +55,13 @@ const THEME_COLORS = {
  */
 function applyTheme() {
     const root = document.documentElement;
-    
+
     Object.entries(THEME_COLORS).forEach(([key, value]) => {
         // Convert camelCase to kebab-case (e.g., primaryHover -> --primary-hover)
         const cssVarName = `--theme-${key.replace(/([A-Z])/g, '-$1').toLowerCase()}`;
         root.style.setProperty(cssVarName, value);
     });
-    
+
     console.log('✅ Theme colors applied from color.js');
 }
 

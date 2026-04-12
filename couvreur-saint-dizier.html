@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="robots" content="index, follow" />
-    <title>Artisan Couvreur à Saint-Dizier | Toiture et Zinguerie</title>
-    <meta name="description"
+    <title id="page-seo-title">Artisan Couvreur à Saint-Dizier | Toiture et Zinguerie</title>
+    <meta name="description" id="page-seo-desc"
         content="Artisan couvreur à Saint-Dizier. Spécialiste Toiture, Charpente et Zinguerie. Devis gratuit et intervention rapide." />
     <link href="navbar.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
@@ -17,61 +17,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <div class="nav-logo">
-                    <a class="logo-link" href="index.html" id="logo_text">Wilmart</a>
-                </div>
-                <div class="nav-badges">
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-halved"></i>
-                        <span>Garantie Décennale</span>
-                    </div>
-                    <div class="cert-badge google">
-                        <i class="fab fa-google"></i>
-                        <span>Google Certifié</span>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
-                <li class="nav-item dropdown">
-                    <span class="nav-link dropdown-toggle">Zones d'intervention <i
-                            class="fas fa-chevron-down"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="couvreur-revigny-sur-ornain.html">Revigny sur Ornain</a></li>
-                        <li><a href="couvreur-bar-le-duc.html">Bar-le-Duc</a></li>
-                        <li><a href="couvreur-vitry-le-francois.html">Vitry-le-François</a></li>
-                        <li><a href="couvreur-saint-dizier.html">Saint-Dizier</a></li>
-                        <li><a href="couvreur-falons-en-champagne.html">Châlons-en-Champagne</a></li>
-                        <li><a href="couvreur-verdun.html">Verdun</a></li>
-                        <li><a href="couvreur-ligny-en-barrois.html">Ligny-en-Barrois</a></li>
-                        <li><a href="couvreur-commercy.html">Commercy</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <div class="nav-badges-mobile">
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-halved"></i>
-                        <span>Garantie Décennale</span>
-                    </div>
-                    <div class="cert-badge google">
-                        <i class="fab fa-google"></i>
-                        <span>Google Certifié</span>
-                    </div>
-                </div>
-            </ul>
-        </div>
-    </nav>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <!-- City Hero Section -->
     <header class="city-hero">
@@ -82,7 +29,7 @@
                 durable de votre logement</p>
             <div class="city-hero-buttons">
                 <a href="#contact-section" class="city-cta-button primary">Devis Gratuit</a>
-                <a href="tel:0658740747" class="city-cta-button secondary" id="hero-contact-button"><i
+                <a href="tel:0658740747" class="city-cta-button secondary" id="company-phone"><i
                         class="fas fa-phone"></i> 06 58 74 07
                     47</a>
             </div>
@@ -190,42 +137,6 @@
     <script>
         // Mobile Navigation Toggle
         document.addEventListener('DOMContentLoaded', function () {
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-
-            if (navToggle && navMenu) {
-                navToggle.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    navMenu.classList.toggle('active');
-                    navToggle.classList.toggle('active');
-                });
-            }
-
-            // Mobile Dropdown Toggle
-            const dropdowns = document.querySelectorAll('.dropdown');
-            dropdowns.forEach(dropdown => {
-                const toggle = dropdown.querySelector('.dropdown-toggle');
-                if (toggle) {
-                    toggle.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        // Close other dropdowns
-                        dropdowns.forEach(d => {
-                            if (d !== dropdown) d.classList.remove('active');
-                        });
-                        dropdown.classList.toggle('active');
-                    });
-                }
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function (e) {
-                if (navMenu && navMenu.classList.contains('active') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
-                }
-            });
-
             // Robust Scroll Animations
             const observerOptions = {
                 threshold: 0.1,
