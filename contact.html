@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover"
-        name="viewport" />
-    <meta name="robots" content="index, follow" />
-    <title id="page-seo-title">Contact - Expert Toiture | Devis Gratuit Couverture</title>
-    <link href="navbar.css" rel="stylesheet" />
-    <link href="footer.css" rel="stylesheet" />
-    <link href="contact.css" rel="stylesheet" />
-    <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet" />
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" name="viewport">
+    <meta name="robots" content="index, follow">
+    <title id="page-seo-title">Contact - Un Toit Pour Tous | Devis Gratuit Couverture</title>
+    <link href="navbar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+    <link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -32,28 +26,25 @@
                 <form class="contact-form">
                     <div class="form-group">
                         <label class="form-label" for="name">Nom et prénom</label>
-                        <input class="form-input" id="name" name="name" placeholder="Entrez votre nom complet"
-                            required="" type="text" />
+                        <input class="form-input" id="name" name="name" placeholder="Entrez votre nom complet" required="" type="text">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="phone">Téléphone</label>
-                        <input class="form-input" id="phone" name="phone" placeholder="06 00 00 00 00" type="tel" />
+                        <input class="form-input" id="phone" name="phone" placeholder="06 00 00 00 00" type="tel">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="email">Email</label>
-                        <input class="form-input" id="email" name="email" placeholder="votre.email@exemple.com"
-                            required="" type="email" />
+                        <input class="form-input" id="email" name="email" placeholder="votre.email@exemple.com" required="" type="email">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="message">Message</label>
-                        <textarea class="form-textarea" id="message" name="message"
-                            placeholder="Décrivez votre projet..." required="" rows="6"></textarea>
+                        <textarea class="form-textarea" id="message" name="message" placeholder="Décrivez votre projet..." required="" rows="6"></textarea>
                     </div>
                     <button class="contact-submit-button" type="submit">Envoyer votre message</button>
                 </form>
             </div>
             <div class="contact-image-wrapper slide-in-right">
-                <img alt="Contact Artisan Toiture" data-idx="1" id="image_1" src="image/materiaux-renovation-toiture.jpg" />
+                <img alt="Contact Artisan Toiture" data-idx="1" id="image_1" src="image/materiaux-renovation-toiture.jpg">
                 <div style="display:none" id="context_title_1">Contact Couvreur et Devis</div>
                 <div style="display:none" id="context_description_1">Illustration de prise de contact pour travaux de
                     toiture et rénovation de charpente</div>
@@ -72,7 +63,7 @@
                 <div class="info-blocks">
                     <div class="info-block">
                         <h3 class="info-block-title">Adresse</h3>
-                        <p class="info-block-text">Revigny sur Ornain</p>
+                        <p class="info-block-text" id="company-address">Revigny sur Ornain</p>
                     </div>
                     <div class="info-block">
                         <h3 class="info-block-title">Horaires</h3>
@@ -81,8 +72,7 @@
                 </div>
             </div>
             <div class="location-map slide-in-right">
-                <div id="map"
-                    style="height: 400px; width: 100%; max-width: 100%; border-radius: 8px; overflow: hidden; box-sizing: border-box;">
+                <div id="map" style="height: 400px; width: 100%; max-width: 100%; border-radius: 8px; overflow: hidden; box-sizing: border-box;">
                 </div>
             </div>
         </div>
@@ -152,8 +142,7 @@
             }
         }
     </style>
-    <script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script crossorigin="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>// Configuration de l'adresse et des coordonnées
         var MAP_ADDRESS = "Revigny sur Ornain";
         var MAP_LATITUDE = 48.8284503;
@@ -312,6 +301,7 @@
             });
         })();
     </script>
-</body>
 
-</html>
+
+
+</body></html>

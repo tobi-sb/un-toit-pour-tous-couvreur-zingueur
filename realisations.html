@@ -1,0 +1,456 @@
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="robots" content="index, follow">
+    <title id="page-seo-title">Nos Réalisations - Un Toit Pour Tous | Travaux de Couverture</title>
+    <link href="navbar.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="realisations.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .gallery-title {
+                margin-top: 60px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+    <!-- Content Removed -->
+    <section class="gallery-section">
+        <div class="gallery-content fade-in">
+            <h2 class="gallery-title" id="text_realisations_title">Galerie de Chantiers</h2>
+            <p class="gallery-description" data-text-id="text_realisations_desc" id="text_gallery_desc">Découvrez nos
+                projets
+                de couverture en tuiles, ardoises et zinc, ainsi que nos travaux de rénovation de charpente et
+                zinguerie,
+                réalisés avec professionnalisme et souci du détail.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img alt="Galerie 1" class="gallery-img" id="gallery_image_1" src="image/le-toit-devient-trop-vieux.jpg" data-gallery-index="0"></div>
+                <div class="gallery-item"><img alt="Galerie 2" class="gallery-img" id="gallery_image_2" src="image/renovation-toiture-25012019-1026-1280x428.jpg" data-gallery-index="1"></div>
+                <div class="gallery-item"><img alt="Galerie 3" class="gallery-img" id="gallery_image_3" src="image/Renovation-toiture-1.jpg" data-gallery-index="2"></div>
+                <div class="gallery-item"><img alt="Galerie 4" class="gallery-img" id="gallery_image_4" src="image/AdobeStock_165081763-1280x848.jpeg" data-gallery-index="3"></div>
+                <div class="gallery-item"><img alt="Galerie 5" class="gallery-img" id="gallery_image_5" src="image/Bardeaux-en-tole.jpg" data-gallery-index="4"></div>
+                <div class="gallery-item"><img alt="Galerie 6" class="gallery-img" id="gallery_image_6" src="image/renovation-toiture-pose-tuile-15102019-1815-1280x960.jpg" data-gallery-index="5">
+                </div>
+                <div class="gallery-item"><img alt="Galerie 7" class="gallery-img" id="gallery_image_7" src="image/fuite-de-toit-03012019-1153.jpg" data-gallery-index="6"></div>
+                <div class="gallery-item"><img alt="Galerie 8" class="gallery-img" id="gallery_image_8" src="image/Bandeaux-de-bois.jpg" data-gallery-index="7"></div>
+                <div class="gallery-item"><img alt="Galerie 9" class="gallery-img" id="gallery_image_9" src="image/Fotolia_58530498_S.jpg" data-gallery-index="8"></div>
+                <div class="gallery-item"><img alt="Galerie 10" class="gallery-img" id="gallery_image_10" src="image/RENOVATION-TOITURE-01042019-1723.jpg" data-gallery-index="9"></div>
+            </div>
+        </div>
+    </section>
+    <section class="comparison-section">
+        <div class="comparison-container fade-in">
+            <h2 class="comparison-title">Nos Résultats Avant / Après</h2>
+            <p class="comparison-subtitle">Visualisez la transformation de nos chantiers. Glissez le curseur pour voir
+                l'efficacité de nos interventions.</p>
+            <p class="comparison-disclaimer"><em>*Ces images sont factices et seront remplacées par vos propres
+                    réalisations si vous décidez de travailler avec nous.</em></p>
+
+            <div class="comparison-grid">
+                <!-- Slider 1 -->
+                <div class="comparison-card">
+                    <div class="comparison-slider">
+                        <div class="comparison-after" style="background-image: url('image/avant_apres/Apres-nettoyage-toiture-1024x768.jpg');">
+                        </div>
+                        <div class="comparison-before" style="background-image: url('image/avant_apres/avant-nettoyage-toiture-779x1024.jpg');">
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-input" oninput="handleComparison(this)">
+                        <div class="comparison-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-hand-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-label">Nettoyage de Toiture</div>
+                </div>
+
+                <!-- Slider 2 -->
+                <div class="comparison-card">
+                    <div class="comparison-slider">
+                        <div class="comparison-after" style="background-image: url('image/avant_apres/IMG-20250920-WA0018.webp');"></div>
+                        <div class="comparison-before" style="background-image: url('image/avant_apres/IMG-20250920-WA0017.webp');"></div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-input" oninput="handleComparison(this)">
+                        <div class="comparison-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-hand-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-label">Rénovation Complète</div>
+                </div>
+
+                <!-- Slider 3 -->
+                <div class="comparison-card">
+                    <div class="comparison-slider">
+                        <div class="comparison-after" style="background-image: url('image/avant_apres/toiture-et-facade-apres.jpg.webp');">
+                        </div>
+                        <div class="comparison-before" style="background-image: url('image/avant_apres/toiture-et-facade-avant-1.jpg');"></div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-input" oninput="handleComparison(this)">
+                        <div class="comparison-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-hand-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-label">Protection Étanchéité</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Mobile Sticky Buttons -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:0658740747" class="sticky-btn call-btn" id="company-phone">
+            <i class="fas fa-phone-alt"></i> Appeler
+        </a>
+        <a href="contact.html" class="sticky-btn quote-btn">
+            <i class="fas fa-file-invoice"></i> Devis Gratuit
+        </a>
+    </div>
+
+    <style>
+        .mobile-sticky-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #f2f2f2;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 99999;
+            padding: 10px;
+            justify-content: space-between;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+
+        .sticky-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .call-btn {
+            background-color: #f8f9fa;
+            color: #0A2342;
+            border: 1px solid #e9ecef;
+        }
+
+        .quote-btn {
+            background-color: #FF6600;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-sticky-bar {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* Comparison Section Styles */
+        .comparison-section {
+            padding: 100px 20px;
+            background-color: #f8fbff;
+        }
+
+        .comparison-title {
+            font-size: 2.5rem;
+            color: #0A2342;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .comparison-subtitle {
+            color: #3E5066;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 10px;
+            text-align: center;
+        }
+
+        .comparison-disclaimer {
+            color: #FF6600;
+            font-size: 0.9rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .comparison-card {
+            background: #fff;
+            padding: 12px;
+            border-radius: 24px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-slider {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border-radius: 18px;
+            cursor: ew-resize;
+        }
+
+        .comparison-after,
+        .comparison-before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .comparison-before {
+            z-index: 2;
+            clip-path: inset(0 50% 0 0);
+        }
+
+        .comparison-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            appearance: none;
+            z-index: 10;
+            cursor: ew-resize;
+            margin: 0;
+        }
+
+        .comparison-input::-webkit-slider-thumb {
+            appearance: none;
+            width: 4px;
+            height: 100%;
+            cursor: ew-resize;
+        }
+
+        .comparison-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 3px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 5;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .handle-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background: #FF6600;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: none !important;
+            flex-shrink: 0;
+        }
+
+        .comparison-label {
+            margin-top: 20px;
+            font-weight: 700;
+            color: #0A2342;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            .comparison-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+
+    <script src="components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Robust Scroll Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+                // Force visibility for elements already in viewport
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
+
+            // Gallery Lightbox
+            const galleryImages = document.querySelectorAll('.gallery-img');
+            const galleryModal = document.createElement('div');
+            galleryModal.className = 'gallery-modal';
+            galleryModal.innerHTML = `
+        <span class="gallery-close">&times;</span>
+        <span class="gallery-arrow gallery-arrow-left">&#8249;</span>
+        <span class="gallery-arrow gallery-arrow-right">&#8250;</span>
+        <img class="gallery-modal-img" src="" alt=""/>
+    `;
+            document.body.appendChild(galleryModal);
+
+            const modalImg = galleryModal.querySelector('.gallery-modal-img');
+            const closeBtn = galleryModal.querySelector('.gallery-close');
+            const leftArrow = galleryModal.querySelector('.gallery-arrow-left');
+            const rightArrow = galleryModal.querySelector('.gallery-arrow-right');
+
+            let currentImageIndex = 0;
+            const imageArray = Array.from(galleryImages);
+
+            function openGallery(index) {
+                currentImageIndex = index;
+                updateModalImage();
+                galleryModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeGallery() {
+                galleryModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function updateModalImage() {
+                const currentImage = imageArray[currentImageIndex];
+                modalImg.src = currentImage.src;
+                modalImg.alt = currentImage.alt;
+            }
+
+            function nextImage() {
+                currentImageIndex = (currentImageIndex + 1) % imageArray.length;
+                updateModalImage();
+            }
+
+            function prevImage() {
+                currentImageIndex = (currentImageIndex - 1 + imageArray.length) % imageArray.length;
+                updateModalImage();
+            }
+
+            // Open gallery on image click
+            galleryImages.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => openGallery(index));
+            });
+
+            // Close gallery
+            closeBtn.addEventListener('click', closeGallery);
+            galleryModal.addEventListener('click', (e) => {
+                if (e.target === galleryModal) {
+                    closeGallery();
+                }
+            });
+
+            // Navigation arrows
+            leftArrow.addEventListener('click', (e) => {
+                e.stopPropagation();
+                prevImage();
+            });
+
+            rightArrow.addEventListener('click', (e) => {
+                e.stopPropagation();
+                nextImage();
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (galleryModal.classList.contains('active')) {
+                    if (e.key === 'Escape') {
+                        closeGallery();
+                    } else if (e.key === 'ArrowLeft') {
+                        prevImage();
+                    } else if (e.key === 'ArrowRight') {
+                        nextImage();
+                    }
+                }
+            });
+        });
+
+        function handleComparison(input) {
+            const value = input.value;
+            const slider = input.parentElement;
+            const before = slider.querySelector('.comparison-before');
+            const handle = slider.querySelector('.comparison-handle');
+
+            before.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+            handle.style.left = `${value}%`;
+        }
+    </script>
+
+
+
+</body></html>

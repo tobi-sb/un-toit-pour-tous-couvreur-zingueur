@@ -8,7 +8,7 @@ const EMAILJS_CONFIG = {
     SERVICE_ID: 'service_b9wl9z3',
     TEMPLATE_ID: 'template_fj5f5pg', // For full contact forms (Name, Email, etc.)
     SUBSCRIBE_TEMPLATE_ID: 'template_ss0tjem', // For email-only forms (Footer/CTA)
-    TO_EMAIL: 'Sohanzerotwo@gmail.com'
+    TO_EMAIL: 'tobibelaw@gmail.com'
 };
 
 // Initialize EmailJS
