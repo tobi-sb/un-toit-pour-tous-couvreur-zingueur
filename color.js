@@ -6,7 +6,7 @@
 
 const THEME_COLORS = {
     // Brand Colors
-    primary: '#2634b1ff',
+    primary: '#e65c00',
     primaryHover: '#e65c00',
     secondary: '#0A2342', // Deep Blue
     secondaryHover: '#1C3552',
